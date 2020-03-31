@@ -1,0 +1,52 @@
+.button
+  &--outline-white
+    border: 2px solid $white
+    font-family: 'DINPro Bold', sans-serif
+    font-size: 1.285rem
+    background-color: transparent
+    color: $white
+    padding: 1.142rem 2rem
+    transition: color 0.2s
+    cursor: pointer
+    &:hover, &:active
+      background-color: $white
+      color: $orange
+  &--outline-dark
+    border: 2px solid $dark
+    font-family: 'DINPro Medium', sans-serif
+    background-color: transparent
+    padding: 1rem 2.285rem
+    transition: color 0.2s
+    cursor: pointer
+    &:hover, &:active
+      border-color: $orange
+      color: $orange
+
+.section-title
+  display: flex
+  align-items: center
+  justify-content: center
+  &__heading
+    font-family: 'DINPro Light', sans-serif  
+    font-size: 2.571rem
+    color: $dark
+    text-align: center
+    font-weight: 300
+    padding: 0 3.571rem
+  &::before
+    content: ''
+    width: 32.857rem
+    height: 1px
+    background: linear-gradient(to left, $aftergrey, $white)
+  &::after
+    content: ''
+    width: 32.857rem
+    height: 1px
+    background: linear-gradient(to left, $white, $aftergrey)
+#border-left, #border-right
+  width: 0
+  height: 0
+  border-top: 7px solid $aftergrey
+  border-right: 1px solid $aftergrey
+  border-bottom: 7px solid $aftergrey  
+    
