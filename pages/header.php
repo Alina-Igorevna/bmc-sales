@@ -40,7 +40,7 @@
         <div class="info">
             <div class="nav info__nav">
               <a href="#" class="info__nav__item">Объявления</a>
-              <a href="#" class="info__nav__item">Каталоги <i class="fas fa-angle-down"></i></a>
+              <a href="catalog.php" class="info__nav__item">Каталоги <i class="fas fa-angle-down"></i></a>
               <a href="#" class="info__nav__item">Участники</a>
               <a href="#" class="info__nav__item">Партнеры</a>
               <a href="#" class="info__nav__item">О платформе</a>

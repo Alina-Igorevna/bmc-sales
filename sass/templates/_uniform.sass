@@ -1,0 +1,60 @@
+.uniform
+  padding-bottom: 7.142rem
+  &__section-title
+    display: flex
+    align-items: center
+    justify-content: center
+    &__heading
+      font-family: 'DINPro Light', sans-serif  
+      font-size: 1.714rem
+      color: $dark
+      text-align: center
+      font-weight: 300
+      border: 2px solid $dark
+      padding: 2.4rem 4rem
+      max-width: 720px
+      margin-bottom: 2.142rem
+      & strong
+        font-family: 'DINPro Bold', sans-serif 
+    &::before
+      content: ''
+      width: 22.85rem
+      height: 1px
+      background: linear-gradient(to left, $dark, $white)
+    &::after
+      content: ''
+      width: 22.85rem
+      height: 1px
+      background: linear-gradient(to left, $white, $dark)
+  &__wrap
+    background-color: $greybg  
+    display: flex
+    justify-content: space-between
+    max-width: 31rem
+    height: 17.857rem 
+  &__image
+    flex-basis: 50%  
+    position: relative
+    & img
+      bottom: 0
+      right: 0
+      position: absolute
+  &__inform  
+    flex-basis: 50% 
+    display: flex
+    align-items: flex-end
+    flex-direction: column
+    padding: 3.571rem 3.571rem 0 0
+  &__subtitle, &__title
+    font-family: 'DINPro Light', sans-serif  
+    font-weight: normal
+  &__subtitle
+    color: $grey
+    font-size: 1rem  
+    margin-bottom: 0.571rem
+  &__title
+    font-size: 1.714rem
+    color: $dark
+    margin-bottom: 2.142rem
+
+ 

@@ -7,6 +7,7 @@
     color: $white
     padding: 1.142rem 2rem
     transition: color 0.2s
+    transition: background-color 0.2s
     cursor: pointer
     &:hover, &:active
       background-color: $white
@@ -17,10 +18,44 @@
     background-color: transparent
     padding: 1rem 2.285rem
     transition: color 0.2s
+    transition: background-color 0.2s
     cursor: pointer
     &:hover, &:active
       border-color: $orange
       color: $orange
+  &--dark  
+    border: none  
+    font-size: 1.285rem
+    background-color: $dark
+    color: $white
+    padding: 1.285rem 2rem
+    transition: color 0.2s
+    transition: background-color 0.2s
+    cursor: pointer
+    &:hover, &:active
+      background-color: $orange
+      color: $white
+  &--grey
+    border: none
+    width: 100%
+    text-decoration: none
+    color: $dark
+    font-family: 'DINPro Medium', sans-serif
+    font-size: 1.142rem
+    text-align: left
+    background-color: $greybg 
+    padding: 1.428rem 0 1.428rem 1.428rem
+    border-radius: 5px
+    box-shadow: 0px 1px 1px 0px rgba(#575757, 0.6)
+    transition: color 0.2s
+    transition: background-color 0.2s
+    cursor: pointer
+    &:hover
+      color: $white
+      background-color: $orange
+      box-shadow: 0px 1px 1px 0px rgba(#575757, 0.1)
+
+
 
 .section-title
   display: flex
@@ -33,6 +68,7 @@
     text-align: center
     font-weight: 300
     padding: 0 3.571rem
+    margin: 0
   &::before
     content: ''
     width: 32.857rem
@@ -50,3 +86,104 @@
   border-right: 1px solid $aftergrey
   border-bottom: 7px solid $aftergrey  
     
+
+.card
+  display: flex
+  align-items: flex-start
+  flex-direction: column
+  &__discount-tag 
+    font-size: 2.142rem
+    color: $white
+    background-color: $orange
+    padding: 1rem 0.642rem
+    position: absolute
+    margin-top: 1.071rem
+    margin-left: -0.714rem
+    z-index: 99
+    &::before
+      content: ''
+      margin-top: 3.428rem
+      margin-left: -0.642rem
+      border-top: 5px solid #ffd1b0
+      border-left: 10px solid transparent
+      position: absolute
+  &__image
+    background: $cardbg
+    max-width: 22.857rem
+    max-height: 22.857rem
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    &-overlap
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      &-wrap
+        position: absolute
+        display: none
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        font-size: 1.428rem
+        background: rgba(0,0,0, 0.6)
+        padding: 1.428rem
+      &--white
+        color: $white
+        margin-bottom: 1.285rem
+        cursor: pointer
+      &--orange 
+        color: $orange 
+        cursor: pointer 
+    &:hover .card__image-overlap-wrap
+      display: block
+  &__description  
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    padding: 2.142rem 0 2.142rem 1.428rem
+  &__name
+    font-size: 1.285rem
+    color: $dark
+    text-decoration: none  
+    margin-bottom: 0.928rem
+  &__category
+    color: $greyfooter  
+    font-family: 'DINPro Light', sans-serif
+    text-decoration: none
+    margin-bottom: 1.428rem
+  &__rating
+    font-size: 1rem
+    color: $grey
+    &__star
+      margin-right: 0.357rem
+      &--orange  
+        color: $orange
+  &__price
+    font-size: 2.142rem
+    &-old
+      font-size: 1.285rem
+      text-decoration: line-through
+    &-tag
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 2.142rem 1.428rem 0 1.428rem
+      border-top: 1px solid $aftergrey
+      &-old
+        padding: 1.285rem 0 0 1.428rem
+        color: $grey
+  &__currency
+    font-size: 1.142rem  
+    &-old
+      font-size: 1.142rem  
+  &__add-icon
+    font-size: 1.714rem
+    color: $grey
+    cursor: pointer
+    &:hover
+      color: $dark  
+
+

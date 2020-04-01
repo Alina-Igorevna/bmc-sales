@@ -1,0 +1,104 @@
+.hero
+  background-color: #f8f6f7
+  background: linear-gradient(to bottom, #f8f6f7 60%, rgba($dark, 0.1) 100%)
+  margin-bottom: 2rem
+  &__row
+    align-items: stretch
+  &__header
+    padding: 5.5rem 0 0 0.5rem 
+    margin-bottom: 3rem
+    &::before, &::after
+      content: ''
+      width: 3.571rem
+      height: 1px
+      background: $greybtn
+      display: block
+    &::before
+      margin-bottom: 2rem
+    &::after
+      margin-top: 2.5rem    
+  &__title
+    color: $dark
+    font-family: 'DINPro Light', sans-serif  
+    text-transform: uppercase
+    line-height: 1.3
+    font-size: 2.571rem
+    font-weight: normal
+    max-width: 29.42rem
+    margin: 0
+    margin-bottom: 2.428rem
+    & strong
+      font-family: 'DINPro Bold', sans-serif
+  &__swiper
+    &-button
+      display: flex
+      align-items: center
+      margin-left: 0.3rem
+    &-button-prev, &-button-next
+      font-size: 2.257rem
+      color: $greybtn
+      width: 45px
+      height: 45px
+      border: 1px solid $greybtn
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 0.714rem
+      &:hover
+        background-color: $dark
+        border: 1px solid $dark
+        color: $white  
+  &__contacts
+    display: flex
+    // flex-direction: column
+    align-items: flex-end
+    height: 100%
+    &__item
+      color: $grey
+      font-size: 0.86rem
+      &:hover
+        color: $dark
+
+    
+        
+
+.reclame
+  min-height: 42rem
+  display: flex
+  justify-content: space-between
+  position: relative
+  &__image
+    width: 100%
+    position: relative
+    & img 
+      bottom: 0
+      left: 0
+      position: absolute
+      margin-left: -155px
+  &__info  
+    max-width: 12.85rem 
+    align-self: flex-end
+    position: absolute
+    right: 0
+    margin-right: 8.2rem
+    margin-top: -3.4rem
+    &::before
+      content: ''
+      width: 2.142rem
+      height: 1px
+      background: $greybtn
+      display: block
+      margin-bottom: 1.428rem
+  &__title, &__price 
+    font-weight: normal
+    font-size: 1rem
+    color: $grey  
+  &__title
+    margin-bottom: 0.8rem
+  &__price
+    & strong
+      font-size: 1.714rem
+      color: $orange
+     
+
+    
