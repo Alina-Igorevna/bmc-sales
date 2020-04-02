@@ -54,6 +54,17 @@
       color: $white
       background-color: $orange
       box-shadow: 0px 1px 1px 0px rgba(#575757, 0.1)
+  &--orange
+    border: none
+    color: $white
+    background: $orange
+    font-size: 1.285rem
+    padding: 1.428rem 2.142rem 1.428rem 1.428rem 
+    transition: color 0.2s
+    transition: background-color 0.2s
+    cursor: pointer
+    &:hover
+      background: rgba($orange, 0.8)  
 
 
 
@@ -160,6 +171,8 @@
       margin-right: 0.357rem
       &--orange  
         color: $orange
+      &--lightgrey
+        color: $grey  
   &__price
     font-size: 2.142rem
     &-old
@@ -185,5 +198,24 @@
     cursor: pointer
     &:hover
       color: $dark  
+
+.page-hierarchy
+  font-size: 1.142rem
+  font-family: 'DINPro Light', sans-serif
+  &--dark
+    color: $dark
+    margin-right: 1.07rem
+    &::after
+      content: ''
+      width: 1px
+      height: 1.07rem
+      background-color: $greyfooter
+      margin-left: 1.07rem
+      display: inline-block
+  &--grey  
+    color: $grey
+
+.card-navigation
+  padding: 4.285rem 0
 
 

@@ -153,118 +153,22 @@
           <div class="row popular__row">
             <!-- / start card -->
             <div class="col-24">
-              <div class="card popular__card">
-              <div class="card__image">
-              <img src="img/product_111.png" alt="product">
-              <div class="card__image-overlap-wrap">
-              <div class="card__image-overlap">
-              <i class="far fa-heart card__image-overlap--white"></i>
-              <i class="fas fa-plus-circle card__image-overlap--orange"></i>
-              </div>
-              </div>
-              </div>
-              <!-- /.card__imade -->
-              <div class="card__description">
-                <a href="#" class="card__name"> Блузка модель 111</a>
-                <a href="#" class="card__category">Женская одежда</a>
-                <div class="card__rating">
-                <i class="fas fa-star card__rating__star card__rating__star--orange"></i><i class="fas fa-star card__rating__star card__rating__star--orange"></i><i class="fas fa-star card__rating__star card__rating__star--orange"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i>
-                </div>
-              </div>
-              <!-- /.card__description -->
-              <div class="card__price-tag">
-                <span class="card__price">3 000.00 <span class="card__currency">тг.</span></span>
-                <span class="card__add-icon"><i class="fas fa-plus-circle"></i></span>
-              </div>
-              <!-- /.card__price-tag -->
-              </div>
+              <?php include 'pages/product/blouse.php'; ?>
             </div>
             <!-- / end card -->
             <!-- / start card -->
             <div class="col-24">
-              <div class="card popular__card">
-              <div class="card__image">
-              <img src="img/product_2801.png" alt="product">
-              <div class="card__image-overlap-wrap">
-              <div class="card__image-overlap">
-              <i class="far fa-heart card__image-overlap--white"></i>
-              <i class="fas fa-plus-circle card__image-overlap--orange"></i>
-              </div>
-              </div>
-              </div>
-              <!-- /.card__imade -->
-              <div class="card__description">
-                <a href="#" class="card__name">Пуховик артикул: 2801</a>
-                <a href="#" class="card__category">Пуховики</a>
-                <div class="card__rating">
-                <i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i>
-                </div>
-              </div>
-              <!-- /.card__description -->
-              <div class="card__price-tag">
-                <span class="card__price">21 200.00 <span class="card__currency">тг.</span></span>
-                <span class="card__add-icon"><i class="fas fa-plus-circle"></i></span>
-              </div>
-              <!-- /.card__price-tag -->
-              </div>
+              <?php include 'pages/product/jacket.php'; ?>
+            </div>
+            <!-- / end card -->
+            <!-- / start card -->
+            <div class="col-24"> 
+              <?php include 'pages/product/sneakers.php'; ?>
             </div>
             <!-- / end card -->
             <!-- / start card -->
             <div class="col-24">
-              <div class="card popular__card">
-              <div class="card__image">
-              <img src="img/product_452.png" alt="product">
-              <div class="card__image-overlap-wrap">
-              <div class="card__image-overlap">
-              <i class="far fa-heart card__image-overlap--white"></i>
-              <i class="fas fa-plus-circle card__image-overlap--orange"></i>
-              </div>
-              </div>
-              </div>
-              <!-- /.card__imade -->
-              <div class="card__description">
-                <a href="#" class="card__name">Обувь Т 452</a>
-                <a href="#" class="card__category">Женская Обувь</a>
-                <div class="card__rating">
-                <i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i>
-                </div>
-              </div>
-              <!-- /.card__description -->
-              <div class="card__price-tag">
-                <span class="card__price">12 555.00 <span class="card__currency">тг.</span></span>
-                <span class="card__add-icon"><i class="fas fa-plus-circle"></i></span>
-              </div>
-              <!-- /.card__price-tag -->
-              </div>
-            </div>
-            <!-- / end card -->
-            <!-- / start card -->
-            <div class="col-24">
-              <div class="card popular__card">
-              <div class="card__image">
-              <img src="img/product_puma.png" alt="product">
-              <div class="card__image-overlap-wrap">
-              <div class="card__image-overlap">
-              <i class="far fa-heart card__image-overlap--white"></i>
-              <i class="fas fa-plus-circle card__image-overlap--orange"></i>
-              </div>
-              </div>
-              </div>
-              <!-- /.card__imade -->
-              <div class="card__description">
-                <a href="#" class="card__name">Рюкзак PUMA</a>
-                <a href="#" class="card__category">Рюкзаки</a>
-                <div class="card__rating">
-                <i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i>
-                </div>
-              </div>
-              <!-- /.card__description -->
-              <div class="card__price-tag">
-                <span class="card__price">5 000.00 <span class="card__currency">тг.</span></span>
-                <span class="card__add-icon"><i class="fas fa-plus-circle"></i></span>
-              </div>
-              <!-- /.card__price-tag -->
-              </div>
+              <?php include 'pages/product/backpack.php'; ?>
             </div>
             <!-- / end card -->
           </div>
@@ -346,12 +250,42 @@
         <!-- /.container -->
       </section>
       <!-- /.time -->
-      <!-- / start discounts -->
-      <?php 
-      $title = "Товары со скидкой";
-      include 'pages/discounts.php'; 
-      ?>
-      <!-- /end discounts -->
+      <section class="section discounts">
+        <div class="container">
+          <div class="section-title discounts__section-title">
+            <div id="border-left"></div>
+            <h2 class="section-title__heading">Товары со скидкой</h2>
+            <div id="border-right"></div>
+          </div>
+          <!-- /.section-title services__section-title -->
+          <div class="row discounts__row">
+            <!-- / start card -->
+            <div class="col-24">
+              <?php include 'pages/product/coat.php'; ?>
+            </div>
+            <!-- / end card -->
+            <!-- / start card -->
+            <div class="col-24">
+              <?php include 'pages/product/shoes.php'; ?>
+            </div>
+            <!-- / end card -->
+            <!-- / start card -->
+            <div class="col-24">
+              <?php include 'pages/product/sundress.php'; ?>
+            </div>
+            <!-- / end card -->
+            <!-- / start card -->
+            <div class="col-24">
+              <?php include 'pages/product/tie.php'; ?>
+            </div>
+            <!-- / end card -->
+          </div>
+          <!-- /.row -->
+          <div class="discounts__button"><button class="button--outline-dark">Больше товаров <i class="fas fa-chevron-right"></i></button></div>
+        </div>  
+        <!-- /.container -->
+      </section>
+      <!-- /.discounts -->
       <section class="section application">
         <div class="container application__container">
           <div class="row application__row">
@@ -373,5 +307,6 @@
   </main>
   <?php include 'pages/services.php'; ?>
   <?php include 'pages/footer.php'; ?>
+  <script src="js/main.js"></script>
 </body>
 </html>

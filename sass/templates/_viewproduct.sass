@@ -1,0 +1,235 @@
+
+.view-product
+  padding-bottom: 7.142rem
+  &__row
+    align-items: flex-start
+  &__col-40
+    margin-right: 2.142rem
+  &__image-wrap
+  &__main-image 
+    width: 39.285rem
+    height: 39.285rem
+    border: 1px solid $aftergrey
+    background: $white 
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 2.142rem
+  &__preview
+    &-image
+      width: 87px
+      height: 87px
+      border: 1px solid $aftergrey
+      display: flex
+      align-items: center
+      justify-content: center
+      &:hover
+        border: 1px solid $orange
+      &--active
+        border: 1px solid $orange  
+      &-wrap
+        display: flex
+        justify-content: space-between
+
+  &__title
+    font-size: 1.714rem
+    font-family: 'DINPro Bold', sans-serif
+    font-weight: normal
+    color: $dark 
+    margin: 0
+    &-wrap
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      padding-bottom: 1.785rem
+  &__subtitle
+    color: $grey
+    font-size: 1rem
+    margin-right: 1.142rem
+    & strong
+      font-family: 'DINPro Bold', sans-serif
+      font-weight: normal
+  &__price
+    &-wrap  
+      border-top: 1px solid $aftergrey
+      padding: 3rem 0
+      display: flex
+      justify-content: space-between
+    &-title
+      font-size: 3.428rem
+      font-family: 'DINPro Bold', sans-serif
+      color: $dark
+      font-weight: normal
+      margin: 0
+      margin-bottom: 1.571rem
+      & span
+        font-size: 1.714rem
+    &-subtitle
+      color: $greyfooter 
+      font-size: 1.142rem 
+      & strong
+        font-family: 'DINPro Bold', sans-serif
+        font-weight: normal
+  &__qrcode
+    max-width: 88px
+    max-height: 88px 
+  &__color
+    &-title
+      font-size: 1.142rem 
+      color: $dark
+      margin-right: 2.142rem
+    &-wrap 
+      border-top: 1px dashed $aftergrey
+      border-bottom: 1px dashed $aftergrey
+      padding: 2.142rem 0
+      display: flex
+      align-items: flex-start
+  &__delivery-title
+    font-size: 1.142rem
+    color: $dark  
+  &__button
+    margin-right: 1.428rem
+    padding: 1.428rem 2.142rem 1.428rem 1.428rem
+    font-size: 1.285rem
+    font-family: 'DINPro Regulag', sans-serif
+    &-last
+      padding: 1.428rem 1.785rem
+      font-size: 1.285rem
+      font-family: 'DINPro Regulag', sans-serif
+    &-wrap 
+      border-bottom: 1px dashed $aftergrey
+      padding: 2.142rem 0   
+    &-icon
+      font-size: 1.142rem
+      margin-right: 1.07rem  
+  &__other
+    &-wrap 
+      padding-top: 2.142rem
+      display: flex
+      justify-content: space-between   
+    &-text
+      color: $dark
+      margin-right: 2.142rem
+      & strong
+        font-weight: normal
+        font-family: 'DINPro Bold', sans-serif
+    &-last 
+      color: $dark   
+    &-icon
+      font-size: 1.142rem
+      color: $grey
+      margin-left: 1.42rem
+      &:hover
+        color: $dark
+
+
+
+
+.color
+  &-form 
+    display: flex
+    align-items: flex-start
+  &__checkbox 
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    &:checked +
+     .color__label
+       border: 1px solid $orange
+  &__label
+    display: flex
+    align-items: center
+    color: $dark
+    border: 1px solid $aftergrey
+    padding: 1px 1.428rem 1px 1px
+    margin-right: 0.714rem
+    &::before
+      content: ''
+      width: 26px
+      height: 26px
+      cursor: pointer
+      margin-right: 1.428rem
+    &--green
+      &::before
+        content: ''
+        background: #86c255
+    &--yellow 
+      &::before
+        content: ''
+        background: #e9eb5b
+    &--red 
+      &::before
+        content: ''
+        background: #e84b4b
+    &--blue
+      &::before
+        content: ''
+        background: #4b91e8     
+
+
+.delivery
+  &-tab 
+    overflow: hidden
+    background-color: transparent
+  &-tabcontent 
+    display: none
+    border-top: 1px solid $aftergrey 
+    border-bottom: 1px dashed $aftergrey  
+    height: 100px
+    &__pickup
+      display: flex 
+      align-items: flex-start 
+      padding: 2.142rem
+    &__address  
+      padding: 2.142rem
+  &-tablinks
+    background-color: $white
+    border: none
+    float: left
+    cursor: pointer
+    padding: 0 2.142rem 1.428rem 2.142rem
+    font-size: 1.142rem
+    color: $dark
+    &:hover
+      background-color: $white
+    &.active 
+      background-color: $white
+      border-right: 1px solid $aftergrey  
+  &__checkbox 
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    &:checked +
+     .delivery__label
+       border: 1px solid $orange 
+       &::before
+         content: ''
+         background: url('../img/active.svg') no-repeat center 
+  &__label
+    display: flex
+    align-items: center
+    color: $dark
+    border: 1px solid $aftergrey
+    padding: 0.285rem 0.714rem 0.285rem 0.285rem
+    margin-right: 0.714rem
+    &::before
+      content: ''
+      width: 20px
+      height: 20px
+      cursor: pointer
+      border: 1px solid $aftergrey
+      border-radius: 50%
+      margin-right: 1.428rem      
+      
+.address
+  &__label
+    margin-right: 2.142rem
+  &__input
+    width: 100%  
+    height: 20px
+
+
+
+
+
+

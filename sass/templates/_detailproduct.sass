@@ -1,0 +1,79 @@
+.product-detail
+  padding-bottom: 7.142rem
+  &__row
+    display: flex
+    align-items: flex-start
+    justify-content: space-between  
+  &__col-80
+    margin-right: 2.142rem
+  &__title
+    font-family: 'DINPro Medium', sans-serif
+    font-size: 1.285rem
+    color: $dark
+    text-transform: uppercase
+    font-weight: normal
+    margin: 0
+    margin-bottom: 2.857rem   
+  &__tablinks
+    background-color: $white
+    color: $dark
+    font-size: 1.285rem
+    border: none
+    cursor: pointer
+    padding: 1.43rem 3.214rem
+    &:hover
+      background-color: $greytab
+    &.active 
+      background-color: $greytab
+  &__tabcontent
+    display: none
+    background-color: $greytab 
+    height: 30rem
+    padding: 0 2.857rem
+
+.detail-table
+  border-collapse: collapse
+  width: 100%
+  & tr:last-child
+    border: none
+  &__line   
+    border-bottom: 1px solid #e1e1e1
+  &__item   
+    padding: 1.428rem
+    font-size: 1.285rem
+    color: $dark
+    &--bold
+      font-family: 'DINPro Bold', sans-serif
+
+.recently-viewed
+  display: flex
+  align-items: flex-start
+  border-bottom: 1px solid $aftergrey
+  padding-bottom: 2.142rem
+  margin-bottom: 2.142rem
+  &:last-of-type
+    border: none
+  &__image
+    max-width: 87px
+    max-height: 87px
+    margin-right: 2.142rem
+  &__title
+    color: $dark
+    font-size: 1.142rem
+    margin: 0
+    margin-bottom: 0.857rem
+  &__subtitle
+    font-family: 'DINPro Light', sans-serif 
+    color: $greyfooter 
+    margin-bottom: 1rem
+  &__icon
+    color: $greyfooter 
+    font-size: 1rem
+    margin-right: 0.357rem 
+  &__rating   
+    margin-bottom: 1.428rem
+  &__price 
+    color: $dark
+    font-size: 1.142rem
+    & strong
+      font-size: 1.714rem 
