@@ -1,4 +1,4 @@
-<div class="card">
+<div onclick="window.location.href='card.php'" style="cursor:pointer" class="card">
 <span class="card__discount-tag">40%</span>
 <div class="card__image">
 <img src="img/product_555.png" alt="product">
@@ -14,7 +14,18 @@
   <a href="#" class="card__name">Туфли детские 555</a>
   <a href="#" class="card__category">Обувь детская</a>
   <div class="card__rating">
-  <i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i>
+  <div class="rating-group">
+    <input id="shoesRatingFive" value="5" name="Checkbox" type="radio">
+    <label for="shoesRatingFive" class="rating-label"></label>
+    <input id="shoesRatingFour" value="4" name="Checkbox"  type="radio">
+    <label for="shoesRatingFour" class="rating-label"></label>
+    <input id="shoesRatingThree" value="3" name="Checkbox"  type="radio">
+    <label for="shoesRatingThree" class="rating-label"></label>
+    <input id="shoesRatingTwo" value="2" name="Checkbox"  type="radio">
+    <label for="shoesRatingTwo" class="rating-label"></label>
+    <input id="shoesRatingOne" value="1" name="Checkbox"  type="radio">
+    <label for="shoesRatingOne" class="rating-label"></label>
+    </div>
   </div>
 </div>
 <!-- /.card__description -->

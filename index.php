@@ -15,7 +15,7 @@
               <div class="col-35">
                 <div class="hero__header">
                   <h2 class="hero__title">Школьная форма по&nbsp;<strong>самым выгодным</strong> ценам</h2>
-                  <button class="button hero__button button--dark">Подробнее <i class="fas fa-chevron-right"></i></button>
+                  <button class="button hero__button button--dark" onclick="window.location.href='catalog.php'">Подробнее <i class="fas fa-chevron-right"></i></button>
                 </div>
                 <!-- /.hero__header -->
                 <div class="hero__swiper-button">
@@ -59,39 +59,39 @@
       <section class="section uniform">
         <div class="container">
           <div class="uniform__section-title">
-            <h2 class="uniform__section-title__heading"> <strong>УТВЕРЖДЕННАЯ ФОРМА</strong> ДЛЯ ШКОЛ Г.НУРСУЛТАН <i class="fas fa-chevron-right"></i></h2>
+            <a href="card.php" class="uniform__section-title__heading"> <strong>УТВЕРЖДЕННАЯ ФОРМА</strong> ДЛЯ ШКОЛ Г.НУРСУЛТАН <i class="fas fa-chevron-right"></i></a>
           </div>
           <!-- /.uniform__section-title -->
           <div class="row uniform__row">
             <div class="col-32">
               <div class="uniform__wrap">
-                <div class="uniform__image"><img src="img/boy.png" alt="boy"></div>
+                <div class="uniform__image"><img src="img/boy.png" id="boy" alt="boy"></div>
                 <div class="uniform__inform">
                     <span class="uniform__subtitle">Популярные товары</span>
                     <strong class="uniform__title">для мальчиков</strong>
-                  <button class="uniform__button button button--outline-dark">Подробнее <i class="fas fa-chevron-right"></i></button>
+                  <button class="uniform__button button button--outline-dark" onclick="window.location.href='catalog.php'">Подробнее <i class="fas fa-chevron-right"></i></button>
                 </div>
               </div>
             </div>
             <!-- /.col-32 -->
             <div class="col-32">
               <div class="uniform__wrap">
-                <div class="uniform__image"><img src="img/girl.png" alt="boy"></div>
+                <div class="uniform__image"><img src="img/girl.png" alt="girl" id="girl"></div>
                 <div class="uniform__inform">
                     <span class="uniform__subtitle">Популярные товары</span>
                     <strong class="uniform__title">для девочек</strong>
-                  <button class="uniform__button button button--outline-dark">Подробнее <i class="fas fa-chevron-right"></i></button>
+                  <button class="uniform__button button button--outline-dark" onclick="window.location.href='catalog.php'">Подробнее <i class="fas fa-chevron-right"></i></button>
                 </div>
               </div>
             </div>
             <!-- /.col-32 -->
             <div class="col-32">
               <div class="uniform__wrap">
-                <div class="uniform__image"><img src="img/bag.png" alt="boy"></div>
+                <div class="uniform__image"><img src="img/bag.png" alt="bag" id="bag"></div>
                 <div class="uniform__inform">
-                    <span class="uniform__subtitle">Популярные товары</span>
+                    <span class="uniform__subtitle">Самые популярные</span>
                     <strong class="uniform__title">аксессуары</strong>
-                  <button class="uniform__button button button--outline-dark">Подробнее <i class="fas fa-chevron-right"></i></button>
+                  <button class="uniform__button button button--outline-dark" onclick="window.location.href='catalog.php'">Подробнее <i class="fas fa-chevron-right"></i></button>
                 </div>
               </div>
             </div>
@@ -111,33 +111,33 @@
           </div>
           <!-- /.section-title services__section-title -->
           <div class="row categories__row">
-           <div class="col-24">
+           <div class="col-23">
              <div class="row categories__wrap">
-             <a href="#" class="categories__link"> <i class="fas fa-table-tennis categories__icon"></i> Развлечения, досуг</a>
+             <a href="catalog.php" class="categories__link"> <i class="fas fa-table-tennis categories__icon"></i> Развлечения, досуг</a>
             </div>
            </div>
            <!-- /.col-24 -->
-           <div class="col-24">
+           <div class="col-23">
             <div class="row categories__wrap">
-             <a href="#" class="categories__link"> <i class="fas fa-wine-glass-alt categories__icon"></i> Посуда и зеркала</a>
+             <a href="catalog.php" class="categories__link"> <i class="fas fa-wine-glass-alt categories__icon"></i> Посуда и зеркала</a>
             </div>
            </div>
            <!-- /.col-24 -->
-           <div class="col-24">
+           <div class="col-23">
             <div class="row categories__wrap">
-              <a href="#" class="categories__link"> <i class="fas fa-spray-can categories__icon"></i> Парфюмерия и косметика</a>
+              <a href="catalog.php" class="categories__link"> <i class="fas fa-spray-can categories__icon"></i> Парфюмерия и косметика</a>
             </div>
            </div>
            <!-- /.col-24 -->
-           <div class="col-24">
+           <div class="col-23">
             <div class="row categories__wrap">
-              <a href="#" class="categories__link"> <i class="fas fa-keyboard categories__icon"></i> Компьютерная техника</a>
+              <a href="catalog.php" class="categories__link"> <i class="fas fa-keyboard categories__icon"></i> Компьютерная техника</a>
             </div>
            </div>
            <!-- /.col-24 -->
           </div>
           <!-- /.row -->
-          <div class="categories__button"><button class="button--outline-dark">Ещё <i class="fas fa-chevron-right"></i></button></div>
+          <div class="categories__button"><button class="button--outline-dark categories__button--padding" onclick="window.location.href='catalog.php'">Ещё <i class="fas fa-chevron-down categories__button__icon"></i></button></div>
         </div>  
         <!-- /.container -->
       </section>
@@ -173,7 +173,7 @@
             <!-- / end card -->
           </div>
           <!-- /.row -->
-          <div class="popular__button"><button class="button--outline-dark">Больше товаров <i class="fas fa-chevron-right"></i></button></div>
+          <div class="popular__button"><button class="button--outline-dark popular__button--padding" onclick="window.location.href='catalog.php'">Больше товаров <i class="fas fa-chevron-right popular__button__icon"></i></button></div>
         </div>  
         <!-- /.container -->
       </section>
@@ -186,12 +186,12 @@
             <div id="border-right"></div>
           </div>
           <!-- /.section-title services__section-title -->
-          <div class="row time__row">
+          <div id="countdown" class="row time__row countdown">
             <div class="col">
               <div class="timer-wrap time__timer-wrap timer-wrap--dashed">
               <div class="timer-wrap timer-wrap--solid">
                 <span class="timer__title">Дней</span>
-                <span class="timer__hour">01</span>
+                <span id="days" class="days timer__hour">01</span>
               </div>
               </div>
               <!-- /.timer-wrap time__timer-wrap -->
@@ -207,7 +207,7 @@
               <div class="timer-wrap time__timer-wrap timer-wrap--dashed">
               <div class="timer-wrap timer-wrap--solid">
                 <span class="timer__title">Часов</span>
-                <span class="timer__hour">06</span>
+                <span id="hours" class="hours timer__hour">06</span>
               </div>
               </div>
               <!-- /.timer-wrap time__timer-wrap -->
@@ -223,7 +223,7 @@
               <div class="timer-wrap time__timer-wrap timer-wrap--dashed">
               <div class="timer-wrap timer-wrap--solid">
                 <span class="timer__title">Минут</span>
-                <span class="timer__hour">38</span>
+                <span id="minutes" class="minutes timer__hour">38</span>
               </div>
               </div>
               <!-- /.timer-wrap time__timer-wrap -->
@@ -239,7 +239,7 @@
               <div class="timer-wrap time__timer-wrap timer-wrap--dashed">
               <div class="timer-wrap timer-wrap--solid">
                 <span class="timer__title">Секунд</span>
-                <span class="timer__hour">45</span>
+                <span id="seconds" class="seconds timer__hour">45</span>
               </div>
               </div>
               <!-- /.timer-wrap time__timer-wrap -->
@@ -281,7 +281,7 @@
             <!-- / end card -->
           </div>
           <!-- /.row -->
-          <div class="discounts__button"><button class="button--outline-dark">Больше товаров <i class="fas fa-chevron-right"></i></button></div>
+          <div class="discounts__button"><button class="button--outline-dark discounts__button--padding" onclick="window.location.href='catalog.php'">Больше товаров <i class="fas fa-chevron-right discounts__button__icon"></i></button></div>
         </div>  
         <!-- /.container -->
       </section>
@@ -292,7 +292,7 @@
             <div class="application__info">
               <h2 class="application__title">С нашим мобильным приложением проще!</h2>
               <span class="application__subtitle">Экономьте свое время!</span>
-              <button class="button application__button button--outline-white">Попробовать <i class="fas fa-chevron-right"></i></button>
+              <button class="button application__button button--outline-white">Попробовать <i class="fas fa-chevron-right application__button__icon"></i></button>
             </div>
             <!-- /.application__info -->
             <div class="application__imge">
@@ -308,5 +308,6 @@
   <?php include 'pages/services.php'; ?>
   <?php include 'pages/footer.php'; ?>
   <script src="js/main.js"></script>
+  <script src="js/timer.js"></script>
 </body>
 </html>

@@ -89,12 +89,13 @@
               <div class="view-product__delivery-wrap">
                   <h4 class="view-product__delivery-title">Способ доставки:</h4>
                 <div class="delivery-tab">
-                  <button class="delivery-tablinks" onclick="openDelivery(event, 'Pickup')" id="defaultOpen">Самовывоз</button>
-                  <button class="delivery-tablinks" onclick="openDelivery(event, 'Delivery')">Доставка</button>
+                  <butlfton class="delivery-tablinks delivery-tablinks-first" onclick="openDelivery(event, 'Pickup')" id="defaultOpen">Самовывоз</butlfton>
+                  <button class="delivery-tablinks delivery-tablinks-last" onclick="openDelivery(event, 'Delivery')">Доставка</button>
                 </div>
                 <!-- /.delivery-tab -->
                 <div class="delivery-content">
                   <div id="Pickup" class="delivery-tabcontent">
+                    <span class="delivery-form__text">Пункты самовывоза:</span>
                     <div class="delivery-tabcontent__pickup">
                       <div class="delivery-form-group">
                       <input type="checkbox" name="deliveryCheckbox" id="adressOne" class="delivery__checkbox">
@@ -119,8 +120,10 @@
               </div>
               <!-- /.view-product__delivery-wrap -->
               <div class="view-product__button-wrap">
-                <button class="view-product__button button--orange"> <i class="fas fa-shopping-bag view-product__button-icon"></i> Добавить в корзину</button>
-                <button class="view-product__button button--outline-dark"> <i class="far fa-heart view-product__button-icon"></i> Избранное</button>
+                <div>
+                <button class="view-product__button button--orange view-product__button-orange"> <i class="fas fa-shopping-bag view-product__button-icon"></i> Добавить в корзину</button>
+                <button class="view-product__button button--outline-dark view-product__button-dark"> <i class="far fa-heart view-product__button-icon"></i> Избранное</button>
+                </div>
                 <button class="view-product__button-last button--outline-dark">Оптовые предложение</button>
               </div>
               <!-- /.view-product__button-wrap -->
@@ -137,6 +140,7 @@
                 <i class="fab fa-vk view-product__other-icon"></i>
                 <i class="fab fa-odnoklassniki view-product__other-icon"></i>
                 <i class="fab fa-google-plus-g view-product__other-icon"></i>
+                <i class="fab fa-linkedin-in view-product__other-icon"></i>
                 </span>
                 </div>
               </div>
@@ -159,7 +163,7 @@
                 <div class="product-detail__tab">
                   <button class="product-detail__tablinks" onclick="openDetail(event, 'Description')" id="Open">Характеристики товара</button>
                   <button class="product-detail__tablinks" onclick="openDetail(event, 'shopAssistant')">Продавец</button>
-                  <button class="product-detail__tablinks" onclick="openDetail(event, 'anotherSite')">Товар на других сайтах</button>
+                  <button class="product-detail__tablinks product-detail__tablinks-last" onclick="openDetail(event, 'anotherSite')">Товар на других сайтах</button>
                 </div>
                 <!-- /.product-detail__tab -->
                 <div class="product-detail__content">
@@ -278,7 +282,7 @@
           <div class="container">
             <div class="section-title offer__section-title">
               <div id="border-left"></div>
-              <h2 class="section-title__heading">Вам так же могут понравиться</h2>
+              <h2 class="section-title__heading offer__section-title__heading">Вам так же могут понравиться</h2>
               <div id="border-right"></div>
             </div>
             <!-- /.section-title services__section-title -->

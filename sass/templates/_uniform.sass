@@ -1,5 +1,8 @@
 .uniform
-  padding-bottom: 7.142rem
+  padding-bottom: 6.6rem
+  padding-top: 0.5rem
+  &__button
+    padding: 0.9rem 2.2rem
   &__section-title
     display: flex
     align-items: center
@@ -11,9 +14,11 @@
       text-align: center
       font-weight: 300
       border: 2px solid $dark
-      padding: 2.4rem 4rem
+      padding: 2.4rem 4.5rem
       max-width: 720px
       margin-bottom: 2.142rem
+      text-decoration: none
+      letter-spacing: 0
       & strong
         font-family: 'DINPro Bold', sans-serif 
     &::before
@@ -21,11 +26,13 @@
       width: 22.85rem
       height: 1px
       background: linear-gradient(to left, $dark, $white)
+      margin-top: -2rem
     &::after
       content: ''
       width: 22.85rem
       height: 1px
       background: linear-gradient(to left, $white, $dark)
+      margin-top: -2rem
   &__wrap
     background-color: $greybg  
     display: flex
@@ -36,25 +43,33 @@
     flex-basis: 50%  
     position: relative
     & img
-      bottom: 0
-      right: 0
       position: absolute
   &__inform  
     flex-basis: 50% 
     display: flex
     align-items: flex-end
     flex-direction: column
-    padding: 3.571rem 3.571rem 0 0
+    padding: 3.5rem 3.571rem 0 0
   &__subtitle, &__title
     font-family: 'DINPro Light', sans-serif  
     font-weight: normal
   &__subtitle
     color: $grey
     font-size: 1rem  
-    margin-bottom: 0.571rem
   &__title
     font-size: 1.714rem
     color: $dark
-    margin-bottom: 2.142rem
+    margin-bottom: 1.8rem
 
- 
+#boy
+  margin-left: 1.3rem
+  height: 17.857rem
+  width: 15.5rem 
+  bottom: 0
+#girl
+  margin-left: 4.4rem
+  bottom: 0
+#bag 
+    height: 16.4rem
+    margin-top: 0.9rem
+    margin-left: 1.3rem

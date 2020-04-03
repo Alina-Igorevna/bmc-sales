@@ -106,16 +106,16 @@
     font-size: 2.142rem
     color: $white
     background-color: $orange
-    padding: 1rem 0.642rem
+    padding: 0.6rem 0.5rem
     position: absolute
     margin-top: 1.071rem
-    margin-left: -0.714rem
+    margin-left: -0.8rem
     z-index: 99
     &::before
       content: ''
-      margin-top: 3.428rem
-      margin-left: -0.642rem
-      border-top: 5px solid #ffd1b0
+      margin-top: 3.05rem
+      margin-left: -0.4rem
+      border-top: 6px solid #ffd1b0
       border-left: 10px solid transparent
       position: absolute
   &__image
@@ -153,22 +153,22 @@
     display: flex
     align-items: flex-start
     flex-direction: column
-    padding: 2.142rem 0 2.142rem 1.428rem
+    padding: 2rem 0 2.142rem 1.428rem
   &__name
     font-size: 1.285rem
     color: $dark
     text-decoration: none  
-    margin-bottom: 0.928rem
+    margin-bottom: 0.6rem
   &__category
     color: $greyfooter  
     font-family: 'DINPro Light', sans-serif
     text-decoration: none
-    margin-bottom: 1.428rem
+    margin-bottom: 1.2rem
   &__rating
     font-size: 1rem
     color: $grey
     &__star
-      margin-right: 0.357rem
+      margin-left: 0.357rem
       &--orange  
         color: $orange
       &--lightgrey
@@ -183,10 +183,10 @@
       display: flex
       justify-content: space-between
       align-items: center
-      padding: 2.142rem 1.428rem 0 1.428rem
+      padding: 1.7rem 2.1rem 0 1.3rem
       border-top: 1px solid $aftergrey
       &-old
-        padding: 1.285rem 0 0 1.428rem
+        padding: 0.8rem 0 0 1.428rem
         color: $grey
   &__currency
     font-size: 1.142rem  
@@ -218,4 +218,32 @@
 .card-navigation
   padding: 4.285rem 0
 
+// ____________________________________
 
+.rating
+  &-group
+    & input[type="radio"] 
+      display: none 
+  &-label
+    float: right
+    display: block
+    margin-right: 0.357rem
+    &::before
+      cursor: pointer
+      display: block
+      content: '\f005' 
+      font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands'
+      font-weight: 400
+      font-size: 1rem
+      color: $grey
+.rating-group .rating-label:hover, .rating-group .rating-label:hover ~ .rating-label,.rating-group input[type="radio"]:checked ~ .rating-label
+  &::before
+    font-weight: 900
+    color: $orange    
+
+
+
+
+
+
+     

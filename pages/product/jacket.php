@@ -1,4 +1,4 @@
-<div class="card">
+<div onclick="window.location.href='card.php'" style="cursor:pointer"  class="card">
   <div class="card__image">
   <img src="img/product_2801.png" alt="product">
   <div class="card__image-overlap-wrap">
@@ -13,7 +13,18 @@
     <a href="#" class="card__name">Пуховик артикул: 2801</a>
     <a href="#" class="card__category">Пуховики</a>
     <div class="card__rating">
-    <i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i><i class="far fa-star card__rating__star"></i>
+    <div class="rating-group">
+    <input id="jacketRatingFive" value="5" name="Checkbox" type="radio">
+    <label for="jacketRatingFive" class="rating-label"></label>
+    <input id="jacketRatingFour" value="4" name="Checkbox"  type="radio">
+    <label for="jacketRatingFour" class="rating-label"></label>
+    <input id="jacketRatingThree" value="3" name="Checkbox"  type="radio">
+    <label for="jacketRatingThree" class="rating-label"></label>
+    <input id="jacketRatingTwo" value="2" name="Checkbox"  type="radio">
+    <label for="jacketRatingTwo" class="rating-label"></label>
+    <input id="jacketRatingOne" value="1" name="Checkbox"  type="radio">
+    <label for="jacketRatingOne" class="rating-label"></label>
+    </div>
     </div>
   </div>
   <!-- /.card__description -->

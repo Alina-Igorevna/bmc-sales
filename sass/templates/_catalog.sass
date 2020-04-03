@@ -1,8 +1,11 @@
 .catalog
   padding-top: 4.285rem
+  &-header
+    margin-bottom: -0.5rem
   &__row
     display: flex
     justify-content: space-between
+    
     
 
 .product-categories
@@ -24,14 +27,16 @@
       font-size: 1.285rem
       margin-right: 1.571rem
   &__list
-    padding: 0    
+    padding: 0
+    margin: 0
+    margin-top: 1.3rem    
   &__item
     list-style-type: none
     font-size: 1.142rem
     font-family: 'DINPro Medium', sans-serif  
     color: $dark
     cursor: pointer
-    margin-bottom: 1.571rem
+    margin-bottom: 1.4rem
     &:active
       color: $grey
     &:hover
@@ -39,6 +44,7 @@
       text-decoration: underline 
 
 .product-list
+  margin-bottom: 6.6rem
   &__row 
     display: flex 
     margin-bottom: 5.714rem  
@@ -46,6 +52,7 @@
     display: flex
     justify-content: center
     flex-direction: column  
+    margin-top: -2rem
   &__title
     color: $grey
     font-family: 'DINPro Light', sans-serif  
@@ -103,7 +110,7 @@
     justify-content: space-between
   &__group
     display: flex
-    justify-content: start
+    justify-content: flex-start
     flex-direction: column  
     margin-left: 2.142rem
   &__label

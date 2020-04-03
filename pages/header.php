@@ -10,7 +10,7 @@
           <a href="#" class="network__nav__item">Туристич. сети <i class="fas fa-globe network__nav__item-icon"></i></a>
           <a href="#" class="network__nav__item">Ассоциации <i class="fas fa-eye network__nav__item-icon"></i></a>
           <a href="#" class="network__nav__item">Сервисы <i class="fas fa-wrench network__nav__item-icon"></i></a>
-          <i class="fab fa-android"></i>
+          <div class="network__nav__icon"><img src="img/android.svg" alt="android"></div>
           </div>
           <!-- /.nav -->
         </div>
@@ -45,7 +45,7 @@
               <a href="#" class="info__nav__item">Партнеры</a>
               <a href="#" class="info__nav__item">О платформе</a>
               <a href="#" class="info__nav__item">Новости</a>
-              <a href="#" class="info__nav__icon"><i class="fab fa-sistrix"></i></a>
+              <a href="#" class="info__nav__icon"><i class="fas fa-search"></i></a>
             </div>
             <!-- /.info__nav -->
             <div class="buy info__buy">
