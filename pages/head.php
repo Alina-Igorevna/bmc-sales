@@ -3,3 +3,4 @@
   <title><?=$title ?></title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">

@@ -34,10 +34,8 @@
                     <h3 class="reclame__title">Комплект школьной формы
                       «Модерн-стиль»</h3>
                     <span class="reclame__price">от <strong>9000</strong> тг.</span>
-                  </div>
-                  <!-- /.reclame__info -->
+                  </div> 
                 </div>
-                <!-- /.reclame hero__reclame -->
               </div>
               <!-- /.col-50 -->
               <div class="col-5">
@@ -307,6 +305,9 @@
   </main>
   <?php include 'pages/services.php'; ?>
   <?php include 'pages/footer.php'; ?>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/sliderserves.js"></script>
+  <script src="js/slidehead.js"></script>
   <script src="js/main.js"></script>
   <script src="js/timer.js"></script>
 </body>
