@@ -755,6 +755,139 @@ img {
   font-weight: 900;
   color: #f47920; }
 
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.6);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .modal__dialog {
+    position: relative;
+    max-width: 36.36rem;
+    background: #ffffff;
+    padding: 2.4rem 3.5rem 1.98rem;
+    color: #202020; }
+  .modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .modal__title {
+    font-weight: 400;
+    font-size: 1.357rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+    line-height: 1.4; }
+  .modal__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .modal__input-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 2rem; }
+  .modal__policy {
+    margin-bottom: 2.7rem;
+    font-size: 1.15rem; }
+  .modal__button {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    padding: 19px 46px;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 0.93rem; }
+
+.modal-thanks {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.6);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .modal-thanks__dialog {
+    position: relative;
+    max-width: 36.36rem;
+    background: #ffffff;
+    padding: 2.4rem 3.5rem 1.98rem;
+    color: #202020; }
+  .modal-thanks__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .modal-thanks__text {
+    font-weight: 400;
+    font-size: 1.357rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+    line-height: 1.4; }
+
+.modal--visible {
+  opacity: 1;
+  visibility: visible; }
+
 .header__top-menu {
   padding: 0.428rem 0; }
   .header__top-menu::after {
@@ -1187,6 +1320,8 @@ img {
   margin-bottom: 2rem;
   padding-top: 150px;
   margin-top: -150px; }
+  .hero__swiper-container {
+    margin-left: -5.3rem; }
   .hero__button {
     padding: 1.2rem 2.4rem; }
   .hero__row {
@@ -1290,24 +1425,25 @@ img {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  position: relative; }
+  position: relative;
+  width: 750px; }
   .reclame__image {
     width: 100%;
     position: relative; }
     .reclame__image img {
       bottom: 0;
-      left: 0;
+      left: 140px;
       position: absolute;
       margin-left: -155px; }
   .reclame__info {
-    max-width: 12.85rem;
+    max-width: 15rem;
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end;
     position: absolute;
     right: 0;
-    margin-right: 8.2rem;
-    margin-top: -3.1rem; }
+    margin-right: 3rem;
+    margin-top: -3rem; }
     .reclame__info::before {
       content: '';
       width: 2.142rem;
@@ -1324,10 +1460,6 @@ img {
   .reclame__price strong {
     font-size: 1.714rem;
     color: #f47920; }
-
-.swiper-container-head {
-  width: 100%;
-  height: 100%; }
 
 .view-product {
   padding-bottom: 7.142rem; }
@@ -1671,7 +1803,11 @@ img {
 
 .address__input {
   width: 100%;
-  height: 20px; }
+  height: 20px;
+  margin-bottom: 1rem;
+  border: 1px solid #d7d7d7; }
+  .address__input-error {
+    border: 1px solid red; }
 
 .product-detail {
   padding-bottom: 2rem; }
@@ -2132,11 +2268,24 @@ img {
     font-size: 0.6rem;
     margin-left: 0.6rem; }
 
+.services__swiper-container {
+  margin-bottom: 3.6rem; }
+
 .services__section-title {
   margin-bottom: 2.857rem; }
 
 .services__row {
   margin-bottom: 4.285rem; }
+
+.services__swiper-button-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .services__swiper-button-prev, .services__swiper-button-next {
   font-size: 2.257rem;
@@ -2156,7 +2305,7 @@ img {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: auto; }
+  margin-right: 1rem; }
   .services__swiper-button-prev:hover, .services__swiper-button-next:hover {
     background-color: #202020;
     border: 1px solid #202020;
@@ -2189,28 +2338,6 @@ img {
     text-decoration: none;
     font-family: 'DINPro Light', sans-serif;
     color: #989898; }
-
-.swiper-wrapper {
-  width: 100%;
-  height: 100%; }
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
 
 .footer {
   margin-top: 6.6rem; }

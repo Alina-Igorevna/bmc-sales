@@ -6,7 +6,7 @@
       <div id="border-right"></div>
     </div>
     <!-- /.section-title services__section-title -->
-    <div class="swiper-container">
+    <div class="swiper-container services__swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="card-platform services__card-platform">
@@ -68,8 +68,10 @@
     </div>
   </div>
 
+      <div class="services__swiper-button-wrap">
       <div class="services__swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
       <div class="services__swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+      </div>
     </div>
   <!-- /.container -->
 </section>

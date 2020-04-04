@@ -53,37 +53,37 @@
                 </div>
                 <div class="product-categories__list-wrap">
                   <ul class="product-categories__list">
-                    <li class="product-categories__item">Развлечения, досуг</li>
-                    <li class="product-categories__item">Посуда и зеркала</li>
-                    <li class="product-categories__item">Парфюмерия и косметика</li>
-                    <li class="product-categories__item">Оптика</li>
-                    <li class="product-categories__item">Мебель</li>
-                    <li class="product-categories__item">Компьютерная техника</li>
-                    <li class="product-categories__item">Кож.галантерея</li>
-                    <li class="product-categories__item">Канцелярские товары</li>
-                    <li class="product-categories__item">Источники света</li>
-                    <li class="product-categories__item">Инструменты</li>
-                    <li class="product-categories__item">Здоровье</li>
-                    <li class="product-categories__item">Животные и растения</li>
-                    <li class="product-categories__item">Дача и сад</li>
-                    <li class="product-categories__item">Бытовая химия</li>
-                    <li class="product-categories__item">Сельскохозяйственная продукция и сырье</li>
-                    <li class="product-categories__item">Авто</li>
-                    <li class="product-categories__item">Очки</li>
-                    <li class="product-categories__item">Мобильные телефоны</li>
-                    <li class="product-categories__item">Средства личной гигиены</li>
-                    <li class="product-categories__item">Строительные материалы</li>
-                    <li class="product-categories__item">Сувениры</li>
-                    <li class="product-categories__item">Электротовары</li>
-                    <li class="product-categories__item">Ювелирные изделия</li>
-                    <li class="product-categories__item">Домашний текстиль, ковры</li>
-                    <li class="product-categories__item">Туризм и спорт</li>
-                    <li class="product-categories__item">Сумки, кошельки</li>
-                    <li class="product-categories__item">Разное</li>
-                    <li class="product-categories__item">Одежда</li>
-                    <li class="product-categories__item">Обувь</li>
-                    <li class="product-categories__item">Продукты питания</li>
-                    <li class="product-categories__item">Книги</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Развлечения, досуг</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Посуда и зеркала</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Парфюмерия и косметика</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Оптика</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Мебель</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Компьютерная техника</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Кож.галантерея</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Канцелярские товары</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Источники света</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Инструменты</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Здоровье</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Животные и растения</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Дача и сад</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Бытовая химия</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Сельскохозяйственная продукция и сырье</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Авто</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Очки</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Мобильные телефоны</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Средства личной гигиены</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Строительные материалы</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Сувениры</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Электротовары</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Ювелирные изделия</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Домашний текстиль, ковры</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Туризм и спорт</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Сумки, кошельки</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Разное</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Одежда</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Обувь</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Продукты питания</li>
+                    <li onclick="window.location.href='catalog.php'" class="product-categories__item">Книги</li>
                   </ul>
                 </div>
               </div>
@@ -208,8 +208,7 @@
   </main>
   <?php include 'pages/services.php'; ?>
   <?php include 'pages/footer.php'; ?>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/sliderserves.js"></script>
-  <script src="js/main.js"></script>
+  <?php include 'pages/modal.php'; ?>
+  <?php include 'pages/listjs.php'; ?>
 </body>
 </html>

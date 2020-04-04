@@ -109,10 +109,12 @@
                   </div>
                   <!-- /.delivery-Pickup -->
                   <div id="Delivery" class="delivery-tabcontent">
-                    <div class="delivery-tabcontent__address">
+                    <form class="delivery-tabcontent__address" id="form-address">
                       <label for="addressHome" class="address__label">Ваш адрес</label>
-                      <input type="text" name="Home" class="address__input" id="addressHome" placeholder="Введите адрес">
-                    </div>
+                      <input type="text" name="Address" class="address__input" id="addressHome" placeholder="Введите адрес">
+                      <label for="addressPhone" class="address__label">Ваш телефон</label>
+                      <input type="text" name="Phone" class="address__input" id="addressPhone" placeholder="Введите телефон">
+                    </form>
                   </div>
                   <!-- /.delivery-Delivery -->
                 </div>
@@ -321,8 +323,7 @@
   </main>
   <?php include 'pages/services.php'; ?>
   <?php include 'pages/footer.php'; ?>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/sliderserves.js"></script>
-  <script src="js/main.js"></script>
+  <?php include 'pages/modal.php'; ?>
+  <?php include 'pages/listjs.php'; ?>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<div onclick="window.location.href='card.php'" style="cursor:pointer" class="card">
-  <div class="card__image">
+<div class="card">
+  <div onclick="window.location.href='card.php'" style="cursor:pointer" class="card__image">
   <img src="img/product_111.png" alt="product">
   <div class="card__image-overlap-wrap">
   <div class="card__image-overlap">

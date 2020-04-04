@@ -25,19 +25,50 @@
                 <!-- /.hero__swiper-button -->
               </div>
               <!-- /.col-40 -->
-              <div class="col-50">
-                <div class="reclame hero__reclame">
-                  <div class="reclame__image">
-                    <img src="img/reclame.png" alt="reclame">
+              <!-- Slider main container -->
+              <div class="swiper-container hero__swiper-container col-50">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div class="reclame hero__reclame">
+                          <div class="reclame__image">
+                            <img src="img/reclame.png" alt="reclame">
+                          </div>
+                          <div class="reclame__info">
+                            <h3 class="reclame__title">Комплект школьной формы
+                              «Модерн-стиль»</h3>
+                            <span class="reclame__price">от <strong>9000</strong> тг.</span>
+                          </div> 
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="reclame hero__reclame">
+                          <div class="reclame__image">
+                            <img src="img/reclame.png" alt="reclame">
+                          </div>
+                          <div class="reclame__info">
+                            <h3 class="reclame__title">Комплект школьной формы
+                              «Модерн-стиль»</h3>
+                            <span class="reclame__price">от <strong>9000</strong> тг.</span>
+                          </div> 
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="reclame hero__reclame">
+                          <div class="reclame__image">
+                            <img src="img/reclame.png" alt="reclame">
+                          </div>
+                          <div class="reclame__info">
+                            <h3 class="reclame__title">Комплект школьной формы
+                              «Модерн-стиль»</h3>
+                            <span class="reclame__price">от <strong>9000</strong> тг.</span>
+                          </div> 
+                        </div>
+                      </div>
                   </div>
-                  <div class="reclame__info">
-                    <h3 class="reclame__title">Комплект школьной формы
-                      «Модерн-стиль»</h3>
-                    <span class="reclame__price">от <strong>9000</strong> тг.</span>
-                  </div> 
-                </div>
-              </div>
-              <!-- /.col-50 -->
+               </div>
+              <!-- /.swiper-container -->
               <div class="col-5">
                 <div class="hero__contacts">
                   <a href="#"><i class="fab fa-twitter hero__contacts__item"></i></a>
@@ -303,12 +334,10 @@
       </section>
       <!-- /.section application -->
   </main>
+
   <?php include 'pages/services.php'; ?>
   <?php include 'pages/footer.php'; ?>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/sliderserves.js"></script>
-  <script src="js/slidehead.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/timer.js"></script>
+  <?php include 'pages/modal.php'; ?>
+  <?php include 'pages/listjs.php'; ?>
 </body>
 </html>

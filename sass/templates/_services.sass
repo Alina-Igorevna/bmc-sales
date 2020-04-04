@@ -1,9 +1,16 @@
 .services
+  &__swiper
+    &-container
+      margin-bottom: 3.6rem
   &__section-title
     margin-bottom: 2.857rem
   &__row
     margin-bottom: 4.285rem  
   &__swiper
+    &-button
+      &-wrap
+        display: flex
+        justify-content: center
     &-button-prev, &-button-next
       font-size: 2.257rem
       color: $greybtn
@@ -13,7 +20,7 @@
       display: flex
       align-items: center
       justify-content: center
-      margin: auto
+      margin-right: 1rem
       &:hover
         background-color: $dark
         border: 1px solid $dark
@@ -37,26 +44,6 @@
     color: $greyfooter    
 
     
-.swiper-wrapper
-  width: 100%
-  height: 100%  
 
-.swiper-slide 
-  text-align: center
-  font-size: 18px
-  background: #fff
-  /* Center slide text vertically */
-  display: -webkit-box
-  display: -ms-flexbox
-  display: -webkit-flex
-  display: flex
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  -webkit-justify-content: center
-  justify-content: center
-  -webkit-box-align: center
-  -ms-flex-align: center
-  -webkit-align-items: center
-  align-items: center
 
     
