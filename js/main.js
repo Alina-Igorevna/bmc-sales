@@ -50,6 +50,7 @@
 // Настройка слайдеров
 const swiperHero = new Swiper('.hero__swiper-container', {
   init: true,
+  spaceBetween: 100,
   navigation: {
     nextEl: '.hero__swiper-button-next',
     prevEl: '.hero__swiper-button-prev'
@@ -63,13 +64,13 @@ const swiperServices = new Swiper('.services__swiper-container', {
   slidesPerGroup: 4,
   loop: true,
   loopFillGroupWithBlank: true,
-  breakpoints: {
-    // when window width is >= 640px
-    992: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    }
-  },
+  // breakpoints: {
+  //   // when window width is >= 640px
+  //   992: {
+  //     slidesPerView: 1,
+  //     slidesPerGroup: 1,
+  //   }
+  // },
   navigation: {
     nextEl: '.services__swiper-button-next',
     prevEl: '.services__swiper-button-prev',

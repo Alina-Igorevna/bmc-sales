@@ -12,7 +12,7 @@
       <section class="section hero">
         <div class="container hero__container">
           <div class="row hero__row">
-              <div class="col-35">
+              <div class="col-35 hero__col-35">
                 <div class="hero__header">
                   <h2 class="hero__title">Школьная форма по&nbsp;<strong>самым выгодным</strong> ценам</h2>
                   <button class="button hero__button button--dark" onclick="window.location.href='catalog.php'">Подробнее <i class="fas fa-chevron-right"></i></button>
@@ -26,7 +26,7 @@
               </div>
               <!-- /.col-40 -->
               <!-- Slider main container -->
-              <div class="swiper-container hero__swiper-container col-50">
+              <div class="swiper-container hero__swiper-container col-70">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
                       <!-- Slides -->
@@ -140,25 +140,25 @@
           </div>
           <!-- /.section-title services__section-title -->
           <div class="row categories__row">
-           <div class="col-23">
+           <div class="col-23 categories__col-23">
              <div class="row categories__wrap">
              <a href="catalog.php" class="categories__link"> <i class="fas fa-table-tennis categories__icon"></i> Развлечения, досуг</a>
             </div>
            </div>
            <!-- /.col-24 -->
-           <div class="col-23">
+           <div class="col-23 categories__col-23">
             <div class="row categories__wrap">
              <a href="catalog.php" class="categories__link"> <i class="fas fa-wine-glass-alt categories__icon"></i> Посуда и зеркала</a>
             </div>
            </div>
            <!-- /.col-24 -->
-           <div class="col-23">
+           <div class="col-23 categories__col-23">
             <div class="row categories__wrap">
               <a href="catalog.php" class="categories__link"> <i class="fas fa-spray-can categories__icon"></i> Парфюмерия и косметика</a>
             </div>
            </div>
            <!-- /.col-24 -->
-           <div class="col-23">
+           <div class="col-23 categories__col-23">
             <div class="row categories__wrap">
               <a href="catalog.php" class="categories__link"> <i class="fas fa-keyboard categories__icon"></i> Компьютерная техника</a>
             </div>

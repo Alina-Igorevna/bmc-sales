@@ -1,7 +1,7 @@
 <footer class="footer footer--gray">
   <div class="container">
     <div class="footer__wrap">
-      <div class="about col-23">
+      <div class="about col-23 footer__col-23">
         <sapan class="about__title">Товаропроводящие сети <br> на <strong class="about__title--bold">BMC Sales</strong></sapan>
         <p class="about__sublitle">Наша платформа предоставляет услуги по созданию онлайн-магазинов для продажи вашей продукции</p>
         <span class="about__icon">
@@ -12,14 +12,14 @@
         </span>
       </div>
       <!-- /.col -->
-      <div class="mobile-app col-24">
+      <div class="mobile-app col-24 footer__col">
         <span class="mobile-app__title">Мобильное приложение</span>
         <div class="mobile-app__image"><a href="#"><img src="img/appstore.png" alt="appstore"></a></div>
         <div class="mobile-app__image "><a href="#"><img src="img/googleplay.png" alt="googleplay"></a></div>
         <button class="mobile-app__button button button--outline-dark">Ваш профиль <i class="fas fa-chevron-right mobile-app__button__icon"></i></button>
       </div>
       <!-- /.col -->
-      <div class="information col-24">
+      <div class="information col-24 footer__col">
         <ul class="information__list">
           <li class="information__list__item">О платформе</li>
           <li class="information__list__item">Участники</li>
@@ -32,7 +32,7 @@
         </ul>
       </div>
       <!-- /.col -->
-      <div class="contacts col-24">
+      <div class="contacts col-24 footer__col">
         <div class="logo-wrap contacts__logo-wrap">
           <div class="contacts__logo logo--big"><img src="img/logodark.svg" alt="logo"></div>
           <h1 class="logo-name">
