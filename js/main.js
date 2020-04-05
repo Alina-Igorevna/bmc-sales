@@ -64,19 +64,10 @@ var swiperHero = new Swiper('.hero__swiper-container', {
 
 
 var swiperServices = new Swiper('.services__swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 10,
  //slidesPerGroup: 1,
   loop: true,
  // loopFillGroupWithBlank: true,
  breakpoints: {
-  // when window width is >= 992
-  800: {
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    spaceBetween: 30,
-    loopFillGroupWithBlank: true,
-  }  ,
   // when window width is >= 992
     992: {
       slidesPerView: 4,
@@ -90,6 +81,26 @@ var swiperServices = new Swiper('.services__swiper-container', {
     prevEl: '.services__swiper-button-prev',
   },
 });
+
+var swiperOfferRow = new Swiper('.offer__row-container', {
+  loop: true,
+ // loopFillGroupWithBlank: true,
+  breakpoints: {
+    // when window width is >= 992
+    992: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      spaceBetween: 30,
+      loopFillGroupWithBlank: true,
+    }
+  },
+  navigation: {
+    nextEl: '.offer__swiper-button-next',
+    prevEl: '.offer__swiper-button-prev',
+  },
+});
+
+
 
 // ТАЙМЕР
   var timer = function(elemid, dedline){
@@ -163,6 +174,7 @@ var modal = document.querySelector('.modal'),
     var input = formElem.querySelectorAll('input');
     input.forEach(function(item) {item.value = '';});
   };
+
   // Очистка формы модального окна.
   var resetForm = function(modalForm){
     var ff = modalForm.querySelector('form');
@@ -170,6 +182,7 @@ var modal = document.querySelector('.modal'),
       clearInput(ff);
     }
   };
+
   // Нажатие на кнопку ESC
   var pressESC =  function(event,modalForm){
     if(event.keyCode === 27){ // Если код кнопки 27(ESC) закрываем модальную форму
@@ -226,6 +239,35 @@ var modal = document.querySelector('.modal'),
     }
   });
 
+//************************* */
+var images = ['img/puma.png', 'img/puma_2.png', 'img/puma_3.png', 'img/puma_4.png', 'img/puma_5.png' ];
+// Вывод картинок продукта
+ var viewProductPreviewImages = document.querySelectorAll('.view-product__preview-image'),
+    viewProductPreviewImageWrap = document.querySelector('.view-product__preview-image-wrap'),
+    productImage = document.querySelector('.view-product__main-image img');
+console.log(1);    
+console.log('viewProductPreviewImageWrap: ', viewProductPreviewImageWrap);
+  if(viewProductPreviewImageWrap){
+    
+
+    viewProductPreviewImageWrap.addEventListener('click',function(e){
+      var target = e.target;
+      if(target && (target.classList.contains('view-product__preview-image') || 
+          target.parentNode.classList.contains('view-product__preview-image')) ){
+        
+        viewProductPreviewImages.forEach(function(item, index){
+          if(item === target || item === target.parentNode){
+            
+            item.classList.add('view-product__preview-image--active');
+            productImage.src = images[index];
+          }
+          else{
+            item.classList.remove('view-product__preview-image--active');
+          }
+        });
+      }
+    });
+  }
   
 //************************* */
 // Обработка формы

@@ -29,9 +29,11 @@
           <div class="row view-product__row">
             <div class="col-40 view-product__col-40">
               <div class="view-product__image-wrap">
+                                
                 <div class="view-product__main-image">
                   <img src="img/puma.png" alt="puma">
                 </div>
+
                 <div class="view-product__preview-image-wrap">
                   <div class="view-product__preview-image view-product__preview-image--active"><img src="img/puma_1.png" alt="puma"></div>
                   <div class="view-product__preview-image"><img src="img/puma_2.png" alt="puma"></div>
@@ -39,6 +41,7 @@
                   <div class="view-product__preview-image"><img src="img/puma_4.png" alt="puma"></div>
                   <div class="view-product__preview-image"><img src="img/puma_5.png" alt="puma"></div>
                 </div>
+
               </div>
               <!-- /.view-product__image-wrap -->
             </div>
@@ -282,43 +285,50 @@
       </section>
       <!-- /.section product-detail -->
     <section class="section offer">
-          <div class="container">
-            <div class="section-title offer__section-title">
-              <div id="border-left"></div>
-              <h2 class="section-title__heading offer__section-title__heading">Вам так же могут понравиться</h2>
-              <div id="border-right"></div>
-            </div>
-            <!-- /.section-title services__section-title -->
-            <div class="row offer__row">
-              <!-- / start card -->
+      <div class="container">
+        <div class="section-title offer__section-title">
+          <div id="border-left"></div>
+          <h2 class="section-title__heading offer__section-title__heading">Вам так же могут понравиться</h2>
+          <div id="border-right"></div>
+        </div>
+        <!-- /.section-title services__section-title   row offer__row-->
+        <div class="swiper-container offer__row-container offer__row"> 
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
               <div class="col-24">
                 <?php include 'pages/product/coat.php'; ?>
               </div>
-              <!-- / end card -->
-              <!-- / start card -->
+            </div>
+            <div class="swiper-slide">
               <div class="col-24">
                 <?php include 'pages/product/shoes.php'; ?>
               </div>
-              <!-- / end card -->
-              <!-- / start card -->
+            </div>
+            <div class="swiper-slide">
               <div class="col-24">
                 <?php include 'pages/product/sundress.php'; ?>
               </div>
-              <!-- / end card -->
-              <!-- / start card -->
+            </div>
+            <div class="swiper-slide">
               <div class="col-24">
                 <?php include 'pages/product/tie.php'; ?>
               </div>
-              <!-- / end card -->
             </div>
-            <!-- /.row -->
-            <div class="offer__swiper-button">
-              <div class="offer__swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
-              <div class="offer__swiper-button-next"><i class="fas fa-chevron-right"></i></div>
-            </div>
-            <!-- /.hero__swiper-button -->
-          </div>  
-          <!-- /.container -->
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="offer-button-prev"></div>
+          <div class="offer-button-next"></div>
+        </div>
+        <!-- /swiper-container -->        
+        <div class="offer__swiper-button">
+          <div class="offer__swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+          <div class="offer__swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <!-- /.hero__swiper-button -->
+      </div>
+      <!-- /.container -->
     </section>
     <!-- /.discounts -->
   </main>
