@@ -3,7 +3,8 @@
      <div class="container">
       <div class="menu">
         <div class="network">
-          <div onclick="window.location.href='index.php'" style="cursor:pointer" class="logo logo--little menu__logo--little"><img src="img/logo.svg" alt="logo"></div>
+          <div onclick="window.location.href='index.php'" style="cursor:pointer" class="logo logo--little menu__logo--little">
+          <img src="img/logo.png" alt="logo"></div>
           <div class="nav network__nav">
           <a href="#" class="network__nav__item">Coц. сети <i class="fas fa-comment-dots network__nav__item-icon"></i></a>
           <a href="#" class="network__nav__item">Торгов. сети <i class="fas fa-cart-arrow-down network__nav__item-icon"></i></a>
@@ -29,7 +30,8 @@
     <div class="container">
       <div class="menu">
         <div onclick="window.location.href='index.php'" style="cursor:pointer" class="logo-wrap menu__logo-wrap">
-          <div class="logo logo--big menu__logo--big"><img src="img/logo.svg" alt="logo"></div>
+          <div class="logo logo--big menu__logo--big">
+          <img src="img/logo.png" alt="logo"></div>
           <h1 class="logo-name">
           <strong class="logo-name__title">bmc sales</strong>
           <span class="logo-name__subtitle">партнерская сеть продаж</span>

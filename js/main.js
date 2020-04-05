@@ -334,7 +334,7 @@ function formSend (formElem) {
           formSend(formElem);
         }
     });
-    ym(94938244, 'reachGoal', 'TARGET_NAME'); 
+    ym(61647010,'reachGoal','button');
     return true;
   });
 }
