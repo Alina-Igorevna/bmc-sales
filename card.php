@@ -7,12 +7,13 @@
   ?>
 </head>
 <body>
+  <?php include 'pages/metrika.php'; ?>
   <?php include 'pages/header.php'; ?>
   <main>
     <section class="card-navigation">
       <div class="container">
         <div class="page-hierarchy catalog-header__page-hierarchy">
-          <span class="page-hierarchy--dark">Главная</span>
+          <span onclick="window.location.href='index.php'" style="cursor:pointer" class="page-hierarchy--dark">Главная</span>
           <span class="page-hierarchy--dark">Каталог</span>
           <span class="page-hierarchy--dark">Сумки, кошельки</span>
           <span class="page-hierarchy--dark">Рюкзаки</span>
@@ -42,7 +43,7 @@
               <!-- /.view-product__image-wrap -->
             </div>
             <!-- /.col-40 -->
-            <div class="col-60">
+            <div class="col-60 view-product__col-60">
             <div class="view-product__about-product">
               <div class="view-product__title-wrap">
                   <h2 class="view-product__title">Рюкзак PUMA</h2>
@@ -123,14 +124,14 @@
               <!-- /.view-product__delivery-wrap -->
               <div class="view-product__button-wrap">
                 <div class="view-product__button-group">
-                <button class="view-product__button button--orange view-product__button-orange"> <i class="fas fa-shopping-bag view-product__button-icon"></i> Добавить в корзину</button>
+                <button onclick="ym(94938244, 'reachGoal', 'TARGET_NAME'); return true;" class="view-product__button button--orange view-product__button-orange"> <i class="fas fa-shopping-bag view-product__button-icon"></i> Добавить в корзину</button>
                 <button class="view-product__button button--outline-dark view-product__button-dark"> <i class="far fa-heart view-product__button-icon"></i> Избранное</button>
                 </div>
                 <button class="view-product__button-last button--outline-dark">Оптовые предложение</button>
               </div>
               <!-- /.view-product__button-wrap -->
               <div class="view-product__other-wrap">
-                <div>
+                <div class="view-product__other-text__wrap">
                 <span class="view-product__other-text">Товаров в корзине: <strong>2</strong></span>
                 <span class="view-product__other-text">В избранном: <strong>5</strong></span>
                 </div>

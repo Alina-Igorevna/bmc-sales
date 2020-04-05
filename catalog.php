@@ -7,13 +7,14 @@
   ?>
 </head>
 <body>
+  <?php include 'pages/metrika.php'; ?>
   <?php include 'pages/header.php'; ?>
   <main>
     <section class="section catalog">
       <div class="container">
         <div class="catalog__row catalog-header">
            <div class="page-hierarchy catalog-header__page-hierarchy">
-             <span class="page-hierarchy--dark">Главная</span>
+             <span onclick="window.location.href='index.php'" style="cursor:pointer" class="page-hierarchy--dark">Главная</span>
              <span class="page-hierarchy--grey">Каталог</span>
            </div> 
            <!-- /.page-hierarchy-->
@@ -41,7 +42,7 @@
            <!-- /.catalog-header__form -->
         </div>
         <div class="catalog__row">
-          <div class="col-23">
+          <div class="col-23 catalog__col-23">
             <div class="catalog__product-categories product-categories">
               <div class="product-categories__title">
                 <h2>Категории товаров</h2>

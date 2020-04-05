@@ -7,6 +7,7 @@
   ?>
 </head>
 <body>
+  <?php include 'pages/metrika.php'; ?>
   <?php include 'pages/header.php'; ?>
   <main>
       <section class="section hero">

@@ -54,7 +54,7 @@
   <div class="footer--dark">
     <div class="container">
       <div class="row">
-        <span class="copyright">Copyright © BenchMark Consulting 2018-2019. Все права защищены</span>
+        <span class="copyright">Copyright ©  Glo Academy 2020. Все права защищены</span>
         <a href="#" class="report"> Сообщить об ошибке</a>
       </div>
       <!-- /.row -->

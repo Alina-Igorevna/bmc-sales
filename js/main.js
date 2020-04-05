@@ -59,18 +59,27 @@ const swiperHero = new Swiper('.hero__swiper-container', {
 
 
 const swiperServices = new Swiper('.services__swiper-container', {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  slidesPerGroup: 4,
+  slidesPerView: 1,
+  spaceBetween: 10,
+ //slidesPerGroup: 1,
   loop: true,
-  loopFillGroupWithBlank: true,
-  // breakpoints: {
-  //   // when window width is >= 640px
-  //   992: {
-  //     slidesPerView: 1,
-  //     slidesPerGroup: 1,
-  //   }
-  // },
+ // loopFillGroupWithBlank: true,
+ breakpoints: {
+  // when window width is >= 992
+  800: {
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 30,
+    loopFillGroupWithBlank: true,
+  }  ,
+  // when window width is >= 992
+    992: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      spaceBetween: 30,
+      loopFillGroupWithBlank: true,
+    }
+  },
   navigation: {
     nextEl: '.services__swiper-button-next',
     prevEl: '.services__swiper-button-prev',
@@ -249,22 +258,24 @@ const mask = (event) => {
       if (target.value.length == 2) target.value = "";
   } else setCursorPosition(target.value.length, target);
 };
-
-inputPhone.maxlength="18";
-inputPhone.addEventListener("input", (e) => {
-  if(e.target.classList.contains('address__input-error')){
-    e.target.classList.remove('address__input-error');
-  }
-  mask(e);
-}, false);
-inputPhone.addEventListener("focus", mask, false);
-inputPhone.addEventListener("blur", mask, false);
-addressHome.addEventListener("input", (e) => {
-  if(e.target.classList.contains('address__input-error')){
-    e.target.classList.remove('address__input-error');
-  }
-});
-
+if(inputPhone){
+  inputPhone.maxlength="18";
+  inputPhone.addEventListener("input", (e) => {
+    if(e.target.classList.contains('address__input-error')){
+      e.target.classList.remove('address__input-error');
+    }
+    mask(e);
+  }, false);
+  inputPhone.addEventListener("focus", mask, false);
+  inputPhone.addEventListener("blur", mask, false);
+}
+if(addressHome){
+  addressHome.addEventListener("input", (e) => {
+    if(e.target.classList.contains('address__input-error')){
+      e.target.classList.remove('address__input-error');
+    }
+  });
+}
 // проверка полей ввода формы
 const validInput = (formElem) => {
   const input = formElem.querySelectorAll('input');
@@ -326,6 +337,29 @@ const formSend = (formElem) =>{
   });
 }
 
+const headerMenu = document.querySelector('.header'),
+   btnMenu = document.querySelector('.menu-btn'),
+   productCategoriesTitle = document.querySelector('.product-categories__title'),
+   productCategoriesWrap = document.querySelector('.product-categories__wrap');
+
+
+const init =() =>{
+  if (window.matchMedia('(max-width: 992px)').matches) {
+    
+    console.log('(max-width: 992px)');
+
+    btnMenu.addEventListener('click',() =>{
+      headerMenu.classList.toggle('header-active');
+      btnMenu.classList.toggle('menu-btn-active');
+    });
+
+    productCategoriesTitle.addEventListener('click',() =>{
+      productCategoriesWrap.classList.toggle('product-categories__wrap--active');
+    });
+  } 
+};
+
+init();
 
 });
 
