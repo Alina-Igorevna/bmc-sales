@@ -312,7 +312,7 @@ function postData(url, data){
 function formSend (formElem) {  
   if(validInput(formElem)){
     var formData = new FormData(formElem);
-    postData('../send.php', formData)
+    postData('send.php', formData)
       .then(function(res){
       if(res.status === 200){
           switchModal(modalThanks);
