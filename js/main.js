@@ -184,8 +184,6 @@ var modal = document.querySelector('.modal'),
   // Запуск/закрытие модальной формы
   var switchModal = function(modalForm){
     modalForm.classList.toggle('modal--visible');
-    console.log('modalForm: ', modalForm);
-
     // если modal Имеет класс modal--visible добавляем событие keyup
     if(modalForm.classList.contains('modal--visible')){
       document.addEventListener('keyup', function(event){
@@ -222,7 +220,6 @@ var modal = document.querySelector('.modal'),
   });
   // Добавляем событие click по модальному окну
   modalThanks.addEventListener('click', function(event){
-    console.log('modalThanks');
     var target = event.target;
     if(target.classList.contains('modal-thanks')){
       modalThanks.classList.remove('modal--visible'); 
@@ -350,9 +347,6 @@ var headerMenu = document.querySelector('.header'),
 
    function init (){
   if (window.matchMedia('(max-width: 992px)').matches) {
-    
-    console.log('(max-width: 992px)');
-
     btnMenu.addEventListener('click',function() {
       headerMenu.classList.toggle('header-active');
       btnMenu.classList.toggle('menu-btn-active');
