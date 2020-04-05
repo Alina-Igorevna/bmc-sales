@@ -305,7 +305,6 @@ function validInput (formElem) {
 
 // Функция отправки запроса
 function postData(url, data){
-
   var res = fetch(url,{
     method: 'POST',
     body: data
@@ -318,9 +317,7 @@ function formSend (formElem) {
     var formData = new FormData(formElem);
     postData('../send.php', formData)
       .then(function(res){
-        console.log(res);
-        if(res.status === 200){
-          console.log('res.status: ', res.status);
+      if(res.status === 200){
           switchModal(modalThanks);
         }
       })
@@ -340,6 +337,8 @@ function formSend (formElem) {
           formSend(formElem);
         }
     });
+    ym(94938244, 'reachGoal', 'TARGET_NAME'); 
+    return true;
   });
 }
 

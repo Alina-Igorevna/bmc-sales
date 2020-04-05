@@ -124,7 +124,7 @@
               <!-- /.view-product__delivery-wrap -->
               <div class="view-product__button-wrap">
                 <div class="view-product__button-group">
-                <button onclick="ym(94938244, 'reachGoal', 'TARGET_NAME'); return true;" class="view-product__button button--orange view-product__button-orange"> <i class="fas fa-shopping-bag view-product__button-icon"></i> Добавить в корзину</button>
+                <button class="view-product__button button--orange view-product__button-orange"> <i class="fas fa-shopping-bag view-product__button-icon"></i> Добавить в корзину</button>
                 <button class="view-product__button button--outline-dark view-product__button-dark"> <i class="far fa-heart view-product__button-icon"></i> Избранное</button>
                 </div>
                 <button class="view-product__button-last button--outline-dark">Оптовые предложение</button>
