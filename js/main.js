@@ -31,14 +31,19 @@
   }
   // КОНЕЦ ВТОРОГО БЛОКА С ВКЛАДКАМИ
 
+  if (!String.prototype.startsWith) {
+    String.prototype.startsWith = function(searchString, position) {
+      position = position || 0;
+      return this.indexOf(searchString, position) === position;
+    };
+  } 
+  window.addEventListener('DOMContentLoaded',function() {
 
-  window.addEventListener('DOMContentLoaded',() =>{
-
-  let deadLine = '2020-04-10';
+  var deadLine = '2020-04-10';
 
   // Get the element with id="defaultOpen" and click on it
-    const openElem = document.getElementById("Open");
-    const defaultOpen = document.getElementById("defaultOpen");
+    var openElem = document.getElementById("Open");
+    var defaultOpen = document.getElementById("defaultOpen");
     
     if(defaultOpen){
       defaultOpen.click();
@@ -48,7 +53,7 @@
       openElem.click();
     }
 // Настройка слайдеров
-const swiperHero = new Swiper('.hero__swiper-container', {
+var swiperHero = new Swiper('.hero__swiper-container', {
   init: true,
   spaceBetween: 100,
   navigation: {
@@ -58,7 +63,7 @@ const swiperHero = new Swiper('.hero__swiper-container', {
 });
 
 
-const swiperServices = new Swiper('.services__swiper-container', {
+var swiperServices = new Swiper('.services__swiper-container', {
   slidesPerView: 1,
   spaceBetween: 10,
  //slidesPerGroup: 1,
@@ -87,14 +92,14 @@ const swiperServices = new Swiper('.services__swiper-container', {
 });
 
 // ТАЙМЕР
-  const timer = (elemid, dedline) => {
+  var timer = function(elemid, dedline){
 
-    const timerElem = document.querySelector(elemid);
+    var timerElem = document.querySelector(elemid);
     
-    const addZero = (num) => (num < 10) ? '0' + num : num;
+    var addZero = function(num) {return  (num < 10) ? '0' + num : num;};
 
-    const getTimeRemaining = (endtime) => {
-      const t = Date.parse(endtime) - Date.parse(new Date()),
+    var getTimeRemaining = function(endtime)  {
+      var t = Date.parse(endtime) - Date.parse(new Date()),
         seconds = Math.floor((t / 1000) % 60),
         minutes = Math.floor((t / (1000 * 60)) % 60),
         hours = Math.floor((t / (1000 * 60 * 60)) % 24),
@@ -109,8 +114,8 @@ const swiperServices = new Swiper('.services__swiper-container', {
       };
     };
 
-    const setClock = (timer, endtime) => {
-      const days = timer.querySelector('#days'),
+    var setClock = function(timer, endtime) {
+      var days = timer.querySelector('#days'),
         hours = timer.querySelector('#hours'),
         minutes = timer.querySelector('#minutes'),
         seconds = timer.querySelector('#seconds'),
@@ -119,7 +124,7 @@ const swiperServices = new Swiper('.services__swiper-container', {
       updateClock();
 
       function updateClock() {
-        const t = getTimeRemaining(endtime);
+        var t = getTimeRemaining(endtime);
       
         days.textContent = addZero(t.days);
         hours.textContent = addZero(t.hours);
@@ -147,28 +152,28 @@ const swiperServices = new Swiper('.services__swiper-container', {
 
 //МОДАЛЬНОЕ ОКНО  
 // Элементы модального окна
-  const modal = document.querySelector('.modal'),
+var modal = document.querySelector('.modal'),
     modalBtn = document.querySelector('[data-toggle=modal]'),
     closeBtn = document.querySelector('.modal__close'),
     modalThanks = document.querySelector('.modal-thanks'),
     modalThanksClose =  document.querySelector('.modal-thanks__close');
 
   //Очистка инпутов формы
-  const clearInput = (formElem) => {
-    const input = formElem.querySelectorAll('input');
-    input.forEach(item => item.value = '');
+  var clearInput = function(formElem) {
+    var input = formElem.querySelectorAll('input');
+    input.forEach(function(item) {item.value = '';});
   };
   // Очистка формы модального окна.
-  const resetForm = (modalForm) =>{
-    const ff = modalForm.querySelector('form');
+  var resetForm = function(modalForm){
+    var ff = modalForm.querySelector('form');
     if(ff){
       clearInput(ff);
     }
   };
   // Нажатие на кнопку ESC
-  const pressESC =  (event,modalForm) => {
+  var pressESC =  function(event,modalForm){
     if(event.keyCode === 27){ // Если код кнопки 27(ESC) закрываем модальную форму
-      document.removeEventListener('keyup',(event)=>{
+      document.removeEventListener('keyup',function(event){
         pressESC(event,modalForm);
       });
       modalForm.classList.remove('modal--visible');
@@ -177,26 +182,26 @@ const swiperServices = new Swiper('.services__swiper-container', {
   };
 
   // Запуск/закрытие модальной формы
-  const switchModal = (modalForm) =>{
+  var switchModal = function(modalForm){
     modalForm.classList.toggle('modal--visible');
     console.log('modalForm: ', modalForm);
 
     // если modal Имеет класс modal--visible добавляем событие keyup
     if(modalForm.classList.contains('modal--visible')){
-      document.addEventListener('keyup', (event) =>{
+      document.addEventListener('keyup', function(event){
         pressESC(event,modalForm);
       });
       resetForm(modalForm);
     }
     else{ // иначе удаляем событие
-      document.removeEventListener('keyup', (event)=>{
+      document.removeEventListener('keyup', function(event){
         pressESC(event,modalForm);
       });
     }
   };
 
   // Добавляем событие click кнопке вызывающей модальное окно
-  modalBtn.addEventListener('click', (e) => {
+  modalBtn.addEventListener('click', function(e){
     if(e.target){
       e.preventDefault();
       switchModal(modal);
@@ -204,19 +209,19 @@ const swiperServices = new Swiper('.services__swiper-container', {
   });
   
   // Добавляем событие click по кнопке закрытие модального окна
-  closeBtn.addEventListener('click', () => switchModal(modal));
+  closeBtn.addEventListener('click', function(){switchModal(modal)});
   //  Добавляем событие click по кнопке закрытие модального окна
-  modalThanksClose.addEventListener('click',() => switchModal(modalThanks));
+  modalThanksClose.addEventListener('click',function() {switchModal(modalThanks)});
 
  // Добавляем событие click по модальному окну
-  modal.addEventListener('click', (event) =>{
+  modal.addEventListener('click', function(event) {
     var target = event.target;
     if(target.classList.contains('modal')){
       modal.classList.remove('modal--visible'); 
     }
   });
   // Добавляем событие click по модальному окну
-  modalThanks.addEventListener('click', (event) =>{
+  modalThanks.addEventListener('click', function(event){
     console.log('modalThanks');
     var target = event.target;
     if(target.classList.contains('modal-thanks')){
@@ -227,25 +232,25 @@ const swiperServices = new Swiper('.services__swiper-container', {
   
 //************************* */
 // Обработка формы
-const viewProductButton = document.querySelector('.view-product__button'),
+var viewProductButton = document.querySelector('.view-product__button'),
   formElem = document.getElementById('form-address'),
   inputPhone = document.getElementById('addressPhone'),
   addressHome = document.getElementById('addressHome');
 
-const setCursorPosition = (pos, elem) => {
+  function setCursorPosition(pos, elem) {
   elem.focus();
   if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
   else if (elem.createTextRange) {
-      const range = elem.createTextRange();
+    var range = elem.createTextRange();
       range.collapse(true);
       range.moveEnd("character", pos);
       range.moveStart("character", pos);
       range.select();
   }
-};
+}
 // Маска для ввода телефона
-const mask = (event) => {
-  const target = event.target;
+function mask (event){
+  var target = event.target;
   var matrix = "+7 (___) ___ __ __",
       i = 0,
       def = matrix.replace(/\D/g, ''),
@@ -257,10 +262,11 @@ const mask = (event) => {
   if (event.type == "blur") {
       if (target.value.length == 2) target.value = "";
   } else setCursorPosition(target.value.length, target);
-};
+}
+
 if(inputPhone){
   inputPhone.maxlength="18";
-  inputPhone.addEventListener("input", (e) => {
+  inputPhone.addEventListener("input", function(e) {
     if(e.target.classList.contains('address__input-error')){
       e.target.classList.remove('address__input-error');
     }
@@ -270,17 +276,17 @@ if(inputPhone){
   inputPhone.addEventListener("blur", mask, false);
 }
 if(addressHome){
-  addressHome.addEventListener("input", (e) => {
+  addressHome.addEventListener("input", function(e){
     if(e.target.classList.contains('address__input-error')){
       e.target.classList.remove('address__input-error');
     }
   });
 }
 // проверка полей ввода формы
-const validInput = (formElem) => {
-  const input = formElem.querySelectorAll('input');
-  let res = true;
-  input.forEach(item => {
+function validInput (formElem) {
+  var input = formElem.querySelectorAll('input');
+  var res = true;
+  input.forEach(function(item) {
     if(item.id === 'addressHome' && item.value.length === 0)  {
       item.classList.add('address__input-error');
       setCursorPosition(item.value.length, item);
@@ -295,40 +301,40 @@ const validInput = (formElem) => {
     }
   });
   return res;
-};
+}
 
 // Функция отправки запроса
-const postData = async (url, data) => {
+function postData(url, data){
 
-  let res = await fetch(url,{
+  var res = fetch(url,{
     method: 'POST',
     body: data
   });
-  return await res;
-};
+  return res;
+}
 
-const formSend = (formElem) =>{  
+function formSend (formElem) {  
   if(validInput(formElem)){
-    const formData = new FormData(formElem);
+    var formData = new FormData(formElem);
     postData('../send.php', formData)
-      .then(res => {
+      .then(function(res){
         console.log(res);
         if(res.status === 200){
           console.log('res.status: ', res.status);
           switchModal(modalThanks);
         }
       })
-      .finally(() =>{
+      .finally(function(){
         clearInput(formElem);
       });
   }
- };
+ }
  
   // Обработка нажатия кнопки "Добавить в корзину"
  if(viewProductButton){
-  viewProductButton.addEventListener('click',() =>{
-    const tablicsElem = document.querySelectorAll('.delivery-tablinks');
-    tablicsElem.forEach((item)=>{
+  viewProductButton.addEventListener('click',function(){
+    var tablicsElem = document.querySelectorAll('.delivery-tablinks');
+    tablicsElem.forEach(function(item){
       if(item.classList.contains('delivery-tablinks-last') && 
         item.classList.contains('active') ){
           formSend(formElem);
@@ -337,23 +343,23 @@ const formSend = (formElem) =>{
   });
 }
 
-const headerMenu = document.querySelector('.header'),
+var headerMenu = document.querySelector('.header'),
    btnMenu = document.querySelector('.menu-btn'),
    productCategoriesTitle = document.querySelector('.product-categories__title'),
    productCategoriesWrap = document.querySelector('.product-categories__wrap');
 
 
-const init =() =>{
+   function init (){
   if (window.matchMedia('(max-width: 992px)').matches) {
     
     console.log('(max-width: 992px)');
 
-    btnMenu.addEventListener('click',() =>{
+    btnMenu.addEventListener('click',function() {
       headerMenu.classList.toggle('header-active');
       btnMenu.classList.toggle('menu-btn-active');
     });
 
-    productCategoriesTitle.addEventListener('click',() =>{
+    productCategoriesTitle.addEventListener('click',function() {
       productCategoriesWrap.classList.toggle('product-categories__wrap--active');
     });
   } 
