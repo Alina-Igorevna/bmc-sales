@@ -231,9 +231,13 @@ var modal = document.querySelector('.modal'),
   });
   
   // Добавляем событие click по кнопке закрытие модального окна
-  closeBtn.addEventListener('click', function(){switchModal(modal)});
+  closeBtn.addEventListener('click', function(){
+    switchModal(modal);
+  });
   //  Добавляем событие click по кнопке закрытие модального окна
-  modalThanksClose.addEventListener('click',function() {switchModal(modalThanks)});
+  modalThanksClose.addEventListener('click',function() {
+    switchModal(modalThanks);
+  });
 
  // Добавляем событие click по модальному окну
   modal.addEventListener('click', function(event) {
