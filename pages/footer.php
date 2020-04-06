@@ -2,7 +2,7 @@
   <div class="container">
     <div class="footer__wrap">
       <div class="about col-23 footer__col-23">
-        <sapan class="about__title">Товаропроводящие сети <br> на <strong class="about__title--bold">BMC Sales</strong></sapan>
+        <h5 class="about__title">Товаропроводящие сети <br> на <strong class="about__title--bold">BMC Sales</strong></h5>
         <p class="about__sublitle">Наша платформа предоставляет услуги по созданию онлайн-магазинов для продажи вашей продукции</p>
         <span class="about__icon">
           <a href="#"><i class="fab fa-twitter about__icon__item"></i></a>

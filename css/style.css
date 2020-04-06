@@ -1043,7 +1043,7 @@ img {
       background-color: transparent;
       color: #202020;
       -webkit-appearance: none;
-      background: transparent url("../img/chevron-down-solid.svg") no-repeat;
+      background: transparent url("../img/chevron-down-solid.png") no-repeat;
       background-size: 10px;
       background-position: 92% 50%; }
     .info__nav__item {
@@ -1326,14 +1326,14 @@ img {
     width: 22.857rem;
     height: 3.214rem;
     -webkit-appearance: none;
-    background: transparent url("../img/chevron-down-solid.svg") no-repeat;
+    background: transparent url("../img/chevron-down-solid.png") no-repeat;
     background-size: 11px;
     background-position: 94% 50%; }
   .filter__select-sum {
     width: 14.285rem;
     height: 3.214rem;
     -webkit-appearance: none;
-    background: transparent url("../img/chevron-down-solid.svg") no-repeat;
+    background: transparent url("../img/chevron-down-solid.png") no-repeat;
     background-size: 11px;
     background-position: 91% 50%; }
 
@@ -2068,7 +2068,7 @@ img {
     background-color: transparent;
     color: #202020;
     -webkit-appearance: none;
-    background: transparent url("../img/chevron-down-solid.svg") no-repeat;
+    background: transparent url("../img/chevron-down-solid.png") no-repeat;
     background-size: 8px;
     background-position: 70% 50%; }
   .categories__filter__group {
@@ -2435,7 +2435,8 @@ img {
   .about__title {
     font-size: 1.28rem;
     color: #202020;
-    line-height: 1.3; }
+    line-height: 1.3;
+    margin: 0; }
   .about--bold {
     font-family: 'DINPro Bold', sans-serif; }
   .about__sublitle {

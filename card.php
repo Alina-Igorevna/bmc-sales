@@ -15,9 +15,9 @@
         <div class="page-hierarchy catalog-header__page-hierarchy">
           <span onclick="window.location.href='index.php'" style="cursor:pointer" class="page-hierarchy--dark">Главная</span>
           <span onclick="window.location.href='catalog.php'" style="cursor:pointer" class="page-hierarchy--dark">Каталог</span>
-          <span onclick="window.location.href='catalog.php'" style="cursor:pointer" class="page-hierarchy--dark" class="page-hierarchy--dark">Сумки, кошельки</span>
-          <span onclick="window.location.href='catalog.php'" style="cursor:pointer" class="page-hierarchy--dark" class="page-hierarchy--dark">Рюкзаки</span>
-          <span onclick="window.location.href='catalog.php'" style="cursor:pointer" class="page-hierarchy--dark" class="page-hierarchy--grey">Рюкзак PUMA</span>
+          <span onclick="window.location.href='catalog.php'" style="cursor:pointer" class="page-hierarchy--dark">Сумки, кошельки</span>
+          <span onclick="window.location.href='catalog.php'" style="cursor:pointer" class="page-hierarchy--dark">Рюкзаки</span>
+          <span onclick="window.location.href='catalog.php'" style="cursor:pointer" class="page-hierarchy--grey">Рюкзак PUMA</span>
         </div> 
         <!-- /.page-hierarchy-->
       </div>
@@ -223,7 +223,7 @@
             <div class="col-25">
               <h3 class="product-detail__title">Недавно просмотренное</h3>
               <div class="recently-viewed">
-                <div onclick="window.location.href='card.php'" style="cursor:pointer" class="page-hierarchy--dark" class="recently-viewed__image">
+                <div onclick="window.location.href='card.php'" style="cursor:pointer" class="recently-viewed__image">
                   <img src="img/small_1.jpg" alt="small">
                 </div>
                 <div class="recently-viewed__information">

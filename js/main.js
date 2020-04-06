@@ -37,6 +37,16 @@
       return this.indexOf(searchString, position) === position;
     };
   } 
+
+  if (window.NodeList && !NodeList.prototype.forEach) { 
+    NodeList.prototype.forEach = function(callback, thisArg) { 
+    thisArg = thisArg || window; 
+    for (var i = 0; i < this.length; i++) { 
+    callback.call(thisArg, this[i], i, this); 
+    } 
+    }; 
+    }
+
   window.addEventListener('DOMContentLoaded',function() {
 
   var deadLine = '2020-04-10';
