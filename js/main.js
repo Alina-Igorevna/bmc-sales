@@ -171,7 +171,7 @@ var swiperOfferRow = new Swiper('.offer__row-container', {
   };
 // Запускаем таймер.
  timer('.time__row', deadLine);
-
+//*********************************** */
 //МОДАЛЬНОЕ ОКНО  
 // Элементы модального окна
 var modal = document.querySelector('.modal'),
@@ -254,6 +254,49 @@ var modal = document.querySelector('.modal'),
     }
   });
 
+var validateForm = function(formClass){
+  var form =  $(formClass);
+
+  form.validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      UserEmail: {
+        required: true,
+        email: true
+      },
+      UserPassword: {
+        required: true,
+        minlength: 8  
+        }
+      
+      },
+    messages: {
+      UserEmail: {
+        required: "Поле email должно быть заполнено",
+        email: "Введите email в формате: name@domain.com"
+      },
+      UserPassword: {
+        required: "Поле пароль должно быть заполнено",
+        minlength: jQuery.validator.format("Длина должна быть не менее 8-ми символов")
+      }
+    },
+     submitHandler: function() {
+      form[0].reset();
+      modal.removeClass('modal--visible');
+    }
+  });
+};
+
+validateForm('.modal form');
+
+//************************** */
+var infoNavSelect = document.querySelector('.info__nav__select');
+
+infoNavSelect.addEventListener('onmouseenter',function(){
+  infoNavSelect.classList.add('');
+});
+
 //************************* */
 var images = ['img/puma.png', 'img/puma_2.png', 'img/puma_3.png', 'img/puma_4.png', 'img/puma_5.png' ];
 // Вывод картинок продукта
@@ -303,7 +346,7 @@ var viewProductButton = document.querySelector('.view-product__button'),
   }
 }
 // Маска для ввода телефона
-function mask (event){
+var mask = function(event){
   var target = event.target;
   var matrix = "+7 (___) ___ __ __",
       i = 0,
@@ -316,7 +359,7 @@ function mask (event){
   if (event.type == "blur") {
       if (target.value.length == 2) target.value = "";
   } else setCursorPosition(target.value.length, target);
-}
+};
 
 if(inputPhone){
   inputPhone.maxlength="18";
@@ -337,7 +380,7 @@ if(addressHome){
   });
 }
 // проверка полей ввода формы
-function validInput (formElem) {
+var validInput = function(formElem) {
   var input = formElem.querySelectorAll('input');
   var res = true;
   input.forEach(function(item) {
@@ -355,18 +398,18 @@ function validInput (formElem) {
     }
   });
   return res;
-}
+};
 
 // Функция отправки запроса
-function postData(url, data){
+var postData = function (url, data){
   var res = fetch(url,{
     method: 'POST',
     body: data
   });
   return res;
-}
+};
 
-function formSend (formElem) {  
+var formSend  = function (formElem) {  
   if(validInput(formElem)){
     var formData = new FormData(formElem);
     postData('send.php', formData)
@@ -379,22 +422,22 @@ function formSend (formElem) {
         clearInput(formElem);
       });
   }
- }
+ };
  
   // Обработка нажатия кнопки "Добавить в корзину"
- if(viewProductButton){
-  viewProductButton.addEventListener('click',function(){
-    var tablicsElem = document.querySelectorAll('.delivery-tablinks');
-    tablicsElem.forEach(function(item){
-      if(item.classList.contains('delivery-tablinks-last') && 
-        item.classList.contains('active') ){
-          formSend(formElem);
+  if(viewProductButton){
+    viewProductButton.addEventListener('click',function(){
+      var tablicsElem = document.querySelectorAll('.delivery-tablinks');
+      tablicsElem.forEach(function(item){
+        if(item.classList.contains('delivery-tablinks-last') && 
+          item.classList.contains('active') ){
+            formSend(formElem);
         }
+      });
+      ym(61647010,'reachGoal','button');
+      return true;
     });
-    ym(61647010,'reachGoal','button');
-    return true;
-  });
-}
+  }
 
 var headerMenu = document.querySelector('.header'),
    btnMenu = document.querySelector('.menu-btn'),

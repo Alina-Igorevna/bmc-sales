@@ -12,14 +12,14 @@
          <!-- /.input-group modal__input-group -->
 
          <div class="modal__input-group input-group-invalid">
-          <label for="modalName" class="modal-form__label">Пароль</label>
-          <input type="text" name="UserName" class="modal-form__input" id="modalName" placeholder="Введите пароль">
+          <label for="modalPassword" class="modal-form__label">Пароль</label>
+          <input type="password" name="UserPassword" class="modal-form__input" id="modalPassword" placeholder="Введите пароль">
          </div>
          <!-- /.input-group modal__input-group -->
          
          <input type="hidden" name="nameForm" value="modal_Form">
          <!-- /.policy -->
-         <button class="button--outline-dark">Вход</button>
+         <button class="modal__button  button--outline-dark">Вход</button>
        </form>
        <!-- /.form modal__form -->
      </div>

@@ -1,3 +1,8 @@
+.invalid
+  color: red
+div.invalid
+  font-size: 15px
+  
 .modal 
   opacity: 0
   visibility: hidden
@@ -31,9 +36,10 @@
     cursor: pointer
   &__title
     font-weight: 400
-    font-size: 1.357rem
+    font-size: 1.8rem
     text-align: center
     margin: 0
+    margin-top: 2rem
     margin-bottom: 2rem
     line-height: 1.4
   &__form
@@ -44,6 +50,7 @@
       display: flex 
       flex-direction: column 
       margin-bottom: 2rem
+      font-size: 20px
   &__policy
     margin-bottom: 2.7rem 
     font-size: 1.15rem
@@ -53,7 +60,12 @@
     border: none
     border-radius: 0
     text-transform: uppercase
-    font-size: 0.93rem   
+    font-size: 1.5rem 
+  &-form
+    &__input
+      height: 40px
+      width: 380px 
+
 
 .modal-thanks
   opacity: 0
