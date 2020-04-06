@@ -34,7 +34,7 @@
       <!-- /.col -->
       <div class="contacts col-24 footer__col">
         <div class="logo-wrap contacts__logo-wrap">
-          <div class="contacts__logo logo--big"><img src="img/logodark.svg" alt="logo"></div>
+          <div class="contacts__logo logo--big"><img src="img/logodark.png" alt="logo"></div>
           <h1 class="logo-name">
           <strong class="logo-name__title">bmc sales</strong>
           <span class="logo-name__subtitle">партнерская сеть продаж</span>

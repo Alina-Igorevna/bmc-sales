@@ -89,7 +89,7 @@
       <section class="section uniform">
         <div class="container">
           <div class="uniform__section-title">
-            <a href="card.php" class="uniform__section-title__heading"> <strong>УТВЕРЖДЕННАЯ ФОРМА</strong> ДЛЯ ШКОЛ Г.НУРСУЛТАН <i class="fas fa-chevron-right"></i></a>
+            <h2 onclick="window.location.href='card.php'" style="cursor:pointer" class="uniform__section-title__heading"> <strong>УТВЕРЖДЕННАЯ ФОРМА</strong> ДЛЯ ШКОЛ Г.НУРСУЛТАН <i class="fas fa-chevron-right"></i></h2>
           </div>
           <!-- /.uniform__section-title -->
           <div class="row uniform__row">
@@ -135,9 +135,9 @@
       <section class="section categories">
         <div class="container">
           <div class="section-title categories__section-title">
-            <div id="border-left"></div>
+            <div class="border-left"></div>
             <h2 class="section-title__heading">Категории товаров</h2>
-            <div id="border-right"></div>
+            <div class="border-right"></div>
           </div>
           <!-- /.section-title services__section-title -->
           <div class="row categories__row">
@@ -167,7 +167,17 @@
            <!-- /.col-24 -->
           </div>
           <!-- /.row -->
-          <div class="categories__button"><button class="button--outline-dark categories__button--padding" onclick="window.location.href='catalog.php'">Ещё <i class="fas fa-chevron-down categories__button__icon"></i></button></div>
+          <div class="categories__button">
+          <form class="categories__form">
+               <div class="categories__filter__group">
+                  <select class="categories__select">
+                    <option value="" hidden disabled selected>Ещё </option>
+                    <option value="" class="filter__option">Одежда</option>
+                    <option value="" class="filter__option">Обувь</option>
+                  </select>
+               </div>
+          </form>
+          </div>
         </div>  
         <!-- /.container -->
       </section>
@@ -175,9 +185,9 @@
       <section class="section popular">
         <div class="container">
           <div class="section-title popular__section-title">
-            <div id="border-left"></div>
+            <div class="border-left"></div>
             <h2 class="section-title__heading">Популярные товары</h2>
-            <div id="border-right"></div>
+            <div class="border-right"></div>
           </div>
           <!-- /.section-title services__section-title -->
           <div class="row popular__row">
@@ -211,9 +221,9 @@
       <section class="section time">
         <div class="container">
           <div class="section-title time__section-title">
-            <div id="border-left"></div>
+            <div class="border-left"></div>
             <h2 class="section-title__heading time__section-title__heading">До конца скидок осталось</h2>
-            <div id="border-right"></div>
+            <div class="border-right"></div>
           </div>
           <!-- /.section-title services__section-title -->
           <div id="countdown" class="row time__row countdown">
@@ -277,15 +287,16 @@
             <!-- /.col-24 -->
           </div>
           <!-- /.row -->
+          </div> 
         <!-- /.container -->
       </section>
       <!-- /.time -->
       <section class="section discounts">
         <div class="container">
           <div class="section-title discounts__section-title">
-            <div id="border-left"></div>
+            <div class="border-left"></div>
             <h2 class="section-title__heading">Товары со скидкой</h2>
-            <div id="border-right"></div>
+            <div class="border-right"></div>
           </div>
           <!-- /.section-title services__section-title -->
           <div class="row discounts__row">

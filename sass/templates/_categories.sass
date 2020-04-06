@@ -1,5 +1,22 @@
 .categories
   padding: 0 0 6.5rem 0
+  &__select
+    width: 107px
+    height: 48px
+    border: 2px solid $dark
+    padding: 1rem 2rem
+    font-family: 'DINPro Medium', sans-serif
+    background-color: transparent
+    color: $dark
+    -webkit-appearance: none
+    background: transparent url('../img/chevron-down-solid.svg') no-repeat 
+    background-size: 8px
+    background-position: 70% 50%
+  &__filter
+    &__group
+      display: flex
+      justify-content: flex-start
+      flex-direction: column  
   &__button
     display: flex
     align-items: center

@@ -565,7 +565,7 @@ img {
     background: -webkit-linear-gradient(right, #ffffff, #d7d7d7);
     background: linear-gradient(to left, #ffffff, #d7d7d7); }
 
-#border-left, #border-right {
+.border-left, .border-right {
   width: 0;
   height: 0;
   border-top: 7px solid #d7d7d7;
@@ -918,6 +918,8 @@ img {
   align-items: center; }
   .menu__logo-wrap {
     padding-top: 0.8rem; }
+    .menu__logo-wrap-mobil {
+      display: none; }
   .menu__logo--little {
     margin-right: 2.142rem; }
   .menu__logo--big {
@@ -1032,6 +1034,18 @@ img {
     font-family: 'DINPro Medium', sans-serif;
     font-size: 1.14rem;
     padding-top: 0.7rem; }
+    .info__nav__select {
+      max-width: 90px;
+      border: none;
+      padding: 0;
+      font-family: 'DINPro Medium', sans-serif;
+      font-size: 1.14rem;
+      background-color: transparent;
+      color: #202020;
+      -webkit-appearance: none;
+      background: transparent url("../img/chevron-down-solid.svg") no-repeat;
+      background-size: 10px;
+      background-position: 92% 50%; }
     .info__nav__item {
       text-decoration: none;
       color: #202020;
@@ -1108,7 +1122,8 @@ img {
     -ms-flex-direction: column;
     flex-direction: column;
     font-size: 1.428rem;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    cursor: pointer; }
   .buy__favorites {
     margin-right: 0.714rem; }
 
@@ -1310,11 +1325,17 @@ img {
   .filter__select-date {
     width: 22.857rem;
     height: 3.214rem;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    background: transparent url("../img/chevron-down-solid.svg") no-repeat;
+    background-size: 11px;
+    background-position: 94% 50%; }
   .filter__select-sum {
     width: 14.285rem;
     height: 3.214rem;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    background: transparent url("../img/chevron-down-solid.svg") no-repeat;
+    background-size: 11px;
+    background-position: 91% 50%; }
 
 .filter__option {
   color: #202020;
@@ -1661,7 +1682,8 @@ img {
   .view-product__other-icon {
     font-size: 1.142rem;
     color: #919191;
-    margin-left: 1.1rem; }
+    margin-left: 1.1rem;
+    cursor: pointer; }
     .view-product__other-icon:hover {
       color: #202020; }
 
@@ -1944,6 +1966,7 @@ img {
     -ms-flex-pack: center;
     justify-content: center; }
     .uniform__section-title__heading {
+      margin: 0;
       font-family: 'DINPro Light', sans-serif;
       font-size: 1.714rem;
       color: #202020;
@@ -2036,6 +2059,32 @@ img {
 
 .categories {
   padding: 0 0 6.5rem 0; }
+  .categories__select {
+    width: 107px;
+    height: 48px;
+    border: 2px solid #202020;
+    padding: 1rem 2rem;
+    font-family: 'DINPro Medium', sans-serif;
+    background-color: transparent;
+    color: #202020;
+    -webkit-appearance: none;
+    background: transparent url("../img/chevron-down-solid.svg") no-repeat;
+    background-size: 8px;
+    background-position: 70% 50%; }
+  .categories__filter__group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .categories__button {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2171,7 +2220,8 @@ img {
     .offer__section-title__heading {
       min-width: 600px; }
   .offer__row {
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    padding: 0 1rem; }
   .offer__swiper-button {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2492,7 +2542,7 @@ img {
 @media screen and (max-width: 1650px) {
   .view-product__main-image {
     width: auto;
-    height: auto; } }
+    height: 39.285rem; } }
 
 @media screen and (max-width: 1450px) {
   .section-title__heading {
@@ -2515,7 +2565,9 @@ img {
   .uniform__button {
     padding: 0.9rem 1rem; }
   .application {
-    height: auto; } }
+    height: auto; }
+  .info__nav__item {
+    margin-right: 1.5rem; } }
 
 @media screen and (max-width: 1250px) {
   .reclame__info {
@@ -2549,7 +2601,9 @@ img {
 
 @media screen and (max-width: 1000px) {
   .reclame__info {
-    margin-right: 20rem; } }
+    margin-right: 20rem; }
+  .info__nav {
+    font-size: 1rem; } }
 
 @media screen and (max-width: 991px) {
   .services {
@@ -2720,6 +2774,16 @@ img {
     align-items: flex-start; }
   .menu__logo--little, .menu__logo-wrap {
     display: none; }
+  .menu__logo-wrap-mobil {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 2rem; }
   .network__nav__item::after {
     content: '';
     display: none; }
@@ -2842,6 +2906,10 @@ img {
     background-color: #ffffff;
     border: 1px solid #cccccc;
     color: #cccccc; }
+  .offer__row {
+    max-width: 320px; }
+  .card__image {
+    max-width: 30rem; }
   .hero__swiper-button-prev:hover, .hero__swiper-button-next:hover {
     background-color: transparent;
     border: 1px solid #cccccc;
@@ -2950,7 +3018,12 @@ img {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center; } }
+    justify-content: center;
+    margin-bottom: 2rem; }
+  .col-34 {
+    margin-left: 0;
+    padding: 0 1rem;
+    margin-bottom: 2rem; } }
 
 @media screen and (max-width: 550px) {
   .reclame__info {
@@ -2972,7 +3045,12 @@ img {
   .timer__title {
     font-size: 1rem; }
   .timer__hour {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .filter__select-sum {
+    width: 22.857rem;
+    background-position: 94% 50%; }
+  .filter__group {
+    margin-left: 0; } }
 
 @media screen and (max-width: 550px) {
   .reclame__info {
@@ -3001,7 +3079,9 @@ img {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .product-detail__tabcontent {
+    height: 33rem; } }
 
 @media screen and (max-width: 440px) {
   .view-product__button-icon {
@@ -3049,4 +3129,6 @@ img {
   .information__list__item {
     text-align: center; }
   .about {
-    margin-right: 0; } }
+    margin-right: 0; }
+  #pages-number-3, #pages-number-4 {
+    display: none; } }

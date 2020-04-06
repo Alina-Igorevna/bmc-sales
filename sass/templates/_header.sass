@@ -18,10 +18,13 @@
   &__logo
     &-wrap
       padding-top: 0.8rem
+      &-mobil
+        display: none
     &--little 
       margin-right: 2.142rem
     &--big
       margin-right: 1.07rem 
+
     
 
 .logo
@@ -91,6 +94,18 @@
     font-family: 'DINPro Medium', sans-serif
     font-size: 1.14rem
     padding-top: 0.7rem
+    &__select
+      max-width: 90px
+      border: none
+      padding: 0
+      font-family: 'DINPro Medium', sans-serif
+      font-size: 1.14rem
+      background-color: transparent
+      color: $dark
+      -webkit-appearance: none
+      background: transparent url('../img/chevron-down-solid.svg') no-repeat 
+      background-size: 10px
+      background-position: 92% 50%
     &__item
       text-decoration: none 
       color: $dark
@@ -149,6 +164,7 @@
     flex-direction: column
     font-size: 1.428rem
     padding-top: 1rem
+    cursor: pointer
   &__favorites
     margin-right: 0.714rem
 

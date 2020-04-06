@@ -10,19 +10,19 @@
   <?php include 'pages/metrika.php'; ?>
   <?php include 'pages/header.php'; ?>
   <main>
-    <section class="card-navigation">
+    <div class="card-navigation">
       <div class="container">
         <div class="page-hierarchy catalog-header__page-hierarchy">
           <span onclick="window.location.href='index.php'" style="cursor:pointer" class="page-hierarchy--dark">Главная</span>
-          <span class="page-hierarchy--dark">Каталог</span>
-          <span class="page-hierarchy--dark">Сумки, кошельки</span>
-          <span class="page-hierarchy--dark">Рюкзаки</span>
-          <span class="page-hierarchy--grey">Рюкзак PUMA</span>
+          <span onclick="window.location.href='catalog.php'" style="cursor:pointer" class="page-hierarchy--dark">Каталог</span>
+          <span onclick="window.location.href='catalog.php'" style="cursor:pointer" class="page-hierarchy--dark" class="page-hierarchy--dark">Сумки, кошельки</span>
+          <span onclick="window.location.href='catalog.php'" style="cursor:pointer" class="page-hierarchy--dark" class="page-hierarchy--dark">Рюкзаки</span>
+          <span onclick="window.location.href='catalog.php'" style="cursor:pointer" class="page-hierarchy--dark" class="page-hierarchy--grey">Рюкзак PUMA</span>
         </div> 
         <!-- /.page-hierarchy-->
       </div>
       <!-- /.container -->
-    </section>
+    </div>
     <!-- /.card-navigation -->
       <section class="view-product">
         <div class="container">
@@ -70,7 +70,7 @@
               <!-- /.view-product__price-wrap -->
               <div class="view-product__color-wrap">
                 <span class="view-product__color-title">Цвет:</span> 
-                <form action="" class="color-form view-product__color-form">
+                <form class="color-form view-product__color-form">
                   <div class="color-form-group">
                     <input type="checkbox" name="ColorCheckbox" id="green" class="color__checkbox" >
                     <label for="green" class="color__label color__label--green">Зеленый</label>
@@ -93,7 +93,7 @@
               <div class="view-product__delivery-wrap">
                   <h4 class="view-product__delivery-title">Способ доставки:</h4>
                 <div class="delivery-tab">
-                  <butlfton class="delivery-tablinks delivery-tablinks-first" onclick="openDelivery(event, 'Pickup')" id="defaultOpen">Самовывоз</butlfton>
+                  <button class="delivery-tablinks delivery-tablinks-first" onclick="openDelivery(event, 'Pickup')" id="defaultOpen">Самовывоз</button>
                   <button class="delivery-tablinks delivery-tablinks-last" onclick="openDelivery(event, 'Delivery')">Доставка</button>
                 </div>
                 <!-- /.delivery-tab -->
@@ -223,7 +223,7 @@
             <div class="col-25">
               <h3 class="product-detail__title">Недавно просмотренное</h3>
               <div class="recently-viewed">
-                <div class="recently-viewed__image">
+                <div onclick="window.location.href='card.php'" style="cursor:pointer" class="page-hierarchy--dark" class="recently-viewed__image">
                   <img src="img/small_1.jpg" alt="small">
                 </div>
                 <div class="recently-viewed__information">
@@ -236,12 +236,12 @@
                     <i class="far fa-star recently-viewed__icon"></i>
                     <i class="far fa-star recently-viewed__icon"></i>
                   </div>
-                  <span class="recently-viewed__price"> <strong>21 000.00</strong> тг.</s>
-                </div>
+                  <span class="recently-viewed__price"> <strong>21 000.00</strong> тг.</span>
+                </div>  
               </div>
               <!-- /.recently-viewed -->
               <div class="recently-viewed">
-                <div class="recently-viewed__image">
+                <div onclick="window.location.href='card.php'" style="cursor:pointer" class="recently-viewed__image">
                   <img src="img/small_2.png" alt="small">
                 </div>
                 <div class="recently-viewed__information">
@@ -254,12 +254,12 @@
                     <i class="far fa-star recently-viewed__icon"></i>
                     <i class="far fa-star recently-viewed__icon"></i>
                   </div>
-                  <span class="recently-viewed__price"> <strong>3 000.00</strong> тг.</s>
+                  <span class="recently-viewed__price"> <strong>3 000.00</strong> тг.</span>
                 </div>
               </div>
               <!-- /.recently-viewed -->
               <div class="recently-viewed">
-                <div class="recently-viewed__image">
+                <div onclick="window.location.href='card.php'" style="cursor:pointer" class="recently-viewed__image">
                   <img src="img/small_3.png" alt="small">
                 </div>
                 <div class="recently-viewed__information">
@@ -272,9 +272,9 @@
                     <i class="far fa-star recently-viewed__icon"></i>
                     <i class="far fa-star recently-viewed__icon"></i>
                   </div>
-                  <span class="recently-viewed__price"> <strong>12 555.00</strong> тг.</s>
+                  <span class="recently-viewed__price"> <strong>12 555.00</strong> тг.</span>
+                  </div>  
                 </div>
-              </div>
               <!-- /.recently-viewed -->
             </div>
             <!-- .col-25 -->
@@ -287,14 +287,14 @@
     <section class="section offer">
       <div class="container">
         <div class="section-title offer__section-title">
-          <div id="border-left"></div>
+          <div class="border-left"></div>
           <h2 class="section-title__heading offer__section-title__heading">Вам так же могут понравиться</h2>
-          <div id="border-right"></div>
+          <div class="border-right"></div>
         </div>
         <!-- /.section-title services__section-title   row offer__row-->
         <div class="swiper-container offer__row-container offer__row"> 
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper offer__swiper-wrapper ">
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="col-24">

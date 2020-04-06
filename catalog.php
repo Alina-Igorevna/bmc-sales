@@ -19,7 +19,7 @@
            </div> 
            <!-- /.page-hierarchy-->
            <div class="catalog-header__filter-wrap filter-wrap">
-             <form action="" class="filter__form">
+             <form class="filter__form">
                <div class="filter__group">
                  <label class="filter__label">Сортировать по:</label>
                   <select class="filter__select filter__select-date">
@@ -189,8 +189,8 @@
               <div class="product-list__pages">
                 <div class="product-list__pages-number product-list__pages-number--active"><span>1</span> </div>
                 <div class="product-list__pages-number"><span>2</span> </div>
-                <div class="product-list__pages-number"><span>3</span> </div>
-                <div class="product-list__pages-number"><span>4</span> </div>
+                <div id="pages-number-3" class="product-list__pages-number"><span>3</span> </div>
+                <div id="pages-number-4" class="product-list__pages-number"><span>4</span> </div>
                 <div class="product-list__pages-number"><span>...</span> </div>
                 <div class="product-list__pages-number"><span>30</span> </div>
                 <div class="product-list__pages-next"><span><i class="fas fa-arrow-right"></i></span> </div>

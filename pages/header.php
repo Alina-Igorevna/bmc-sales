@@ -1,4 +1,4 @@
-<hader class="header">
+<header class="header">
   <div class="header__top-menu">
      <div class="container">
       <div class="menu">
@@ -42,7 +42,14 @@
         <div class="info">
             <div class="nav info__nav">
               <a href="#" class="info__nav__item">Объявления</a>
-              <a href="catalog.php" class="info__nav__item">Каталоги <i class="fas fa-angle-down"></i></a>
+              <select class="info__nav__item info__nav__select" onchange="window.location.href=this.options[this.selectedIndex].value">
+                <option value="" hidden disabled selected>Каталоги </option>
+                <option value="catalog.php" class="info__nav__option">Развлечения, досуг</option>
+                <option value="catalog.php" class="info__nav__option">Посуда и зеркала</option>
+                <option value="catalog.php" class="info__nav__option">Парфюмерия и косметика</option>
+                <option value="catalog.php" class="info__nav__option">Оптика</option>
+                <option value="catalog.php" class="info__nav__option">Мебель</option>
+              </select>
               <a href="#" class="info__nav__item">Участники</a>
               <a href="#" class="info__nav__item">Партнеры</a>
               <a href="#" class="info__nav__item">О платформе</a>
@@ -77,7 +84,17 @@
     <!-- /.container -->
   </div>
   <!-- /.headet__bottom-menu -->
-</hader>
+</header>
 <div class="container">
-<div class="menu-btn"></div>
+    <div onclick="window.location.href='index.php'" style="cursor:pointer" class="menu__logo-wrap-mobil">
+      <div class="logo logo--big menu__logo--big">
+      <img src="img/logo.png" alt="logo"></div>
+      <h1 class="logo-name">
+      <strong class="logo-name__title">bmc sales</strong>
+      <span class="logo-name__subtitle">партнерская сеть продаж</span>
+      </h1>
+      <!-- /.logo-title -->
+    </div>
+    <!-- /.logo-wrap menu__logo-wrap -->
+    <div class="menu-btn"></div>
 </div>

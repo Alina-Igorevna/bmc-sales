@@ -1,9 +1,9 @@
 <section class="section services">
   <div class="container">
     <div class="section-title services__section-title">
-      <div id="border-left"></div>
+      <div class="border-left"></div>
       <h2 class="section-title__heading">Сервисы платформы</h2>
-      <div id="border-right"></div>
+      <div class="border-right"></div>
     </div>
     <!-- /.section-title services__section-title -->
     <div class="swiper-container services__swiper-container">

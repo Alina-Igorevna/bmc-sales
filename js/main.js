@@ -84,13 +84,14 @@ var swiperServices = new Swiper('.services__swiper-container', {
 
 var swiperOfferRow = new Swiper('.offer__row-container', {
   loop: true,
+  spaceBetween: 140,
  // loopFillGroupWithBlank: true,
   breakpoints: {
     // when window width is >= 992
     992: {
       slidesPerView: 4,
       slidesPerGroup: 4,
-      spaceBetween: 30,
+      spaceBetween: 40,
       loopFillGroupWithBlank: true,
     }
   },
