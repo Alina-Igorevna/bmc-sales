@@ -398,16 +398,18 @@ var headerMenu = document.querySelector('.header'),
    productCategoriesWrap = document.querySelector('.product-categories__wrap');
 
 
-   function init (){
+var init = function(){
   if (window.matchMedia('(max-width: 992px)').matches) {
     btnMenu.addEventListener('click',function() {
       headerMenu.classList.toggle('header-active');
       btnMenu.classList.toggle('menu-btn-active');
     });
 
-    productCategoriesTitle.addEventListener('click',function() {
-      productCategoriesWrap.classList.toggle('product-categories__wrap--active');
-    });
+    if(productCategoriesTitle){
+      productCategoriesTitle.addEventListener('click',function() {
+        productCategoriesWrap.classList.toggle('product-categories__wrap--active');
+      });
+    }
   } 
 };
 
