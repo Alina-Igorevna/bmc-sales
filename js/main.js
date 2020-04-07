@@ -31,6 +31,20 @@
   }
   // КОНЕЦ ВТОРОГО БЛОКА С ВКЛАДКАМИ
 
+  // Клик по кнопке карточки
+function productClick(evt, url) {
+var target = evt.target;
+if (target.tagName === 'I') {
+if (target.classList.contains('fa-heart')) {
+target.classList.toggle('fas');
+target.classList.toggle('far');
+(target.classList.contains('fas')) ? target.style.color = 'tomato': target.style.color = 'white';
+}
+} else {
+window.location.href = url;
+}
+}
+
   if (!String.prototype.startsWith) {
     String.prototype.startsWith = function(searchString, position) {
       position = position || 0;

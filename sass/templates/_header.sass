@@ -105,13 +105,23 @@
       -webkit-appearance: none
       background: transparent url('../img/chevron-down-solid.png') no-repeat 
       background-size: 10px
-      background-position: 92% 50%
+      background-position: 92% 42%
+      padding-bottom: 0.428rem
+      border-bottom: 1px solid transparent
+      cursor: pointer
+      &:hover
+        background: red
+        background: transparent url('../img/chevron-down-solid-orange.png') no-repeat 
+        background-size: 10px
+        background-position: 92% 42%
+        border-bottom: 1px solid $orange
     &__item
       text-decoration: none 
       color: $dark
       position: relative
       margin-right: 2.3rem
       display: inline-block
+      padding-bottom: 0.428rem
       &:hover 
         color: $orange
         &::after

@@ -1,6 +1,6 @@
 <div  class="card">
 <span class="card__discount-tag">20%</span>
-<div onclick="window.location.href='card.php'" style="cursor:pointer" class="card__image">
+<div onclick="productClick(event,'card.php')" style="cursor:pointer" class="card__image">
 <img src="img/product_tie.png" alt="product">
 <div class="card__image-overlap-wrap">
 <div class="card__image-overlap">

@@ -36,8 +36,8 @@
         <div class="logo-wrap contacts__logo-wrap">
           <div class="contacts__logo logo--big"><img src="img/logodark.png" alt="logo"></div>
           <h1 class="logo-name">
-          <strong class="logo-name__title">bmc sales</strong>
-          <span class="logo-name__subtitle">партнерская сеть продаж</span>
+          <strong class="logo-name__title footer__logo-name__title">bmc&nbsp;sales</strong>
+          <span class="logo-name__subtitle">партнерская&nbsp;сеть&nbsp;продаж</span>
           </h1>
           <!-- /.logo-title -->
         </div>
@@ -53,7 +53,7 @@
   <!-- /.container -->
   <div class="footer--dark">
     <div class="container">
-      <div class="row">
+      <div class="row copyright__row">
         <span class="copyright">Copyright ©  Glo Academy 2020. Все права защищены</span>
         <a href="#" class="report"> Сообщить об ошибке</a>
       </div>

@@ -1,5 +1,5 @@
 <div class="card">
-<div onclick="window.location.href='card.php'" style="cursor:pointer" class="card__image">
+<div onclick="productClick(event,'card.php')" style="cursor:pointer" class="card__image">
 <img src="img/product_puma.png" alt="product">
 <div class="card__image-overlap-wrap">
 <div class="card__image-overlap">

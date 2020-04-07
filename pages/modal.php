@@ -19,7 +19,7 @@
          
          <input type="hidden" name="nameForm" value="modal_Form">
          <!-- /.policy -->
-         <button class="modal__button  button--outline-dark">Вход</button>
+         <button class=" button--outline-dark">Вход</button>
        </form>
        <!-- /.form modal__form -->
      </div>

@@ -6,7 +6,7 @@
       <div class="border-right"></div>
     </div>
     <!-- /.section-title services__section-title -->
-    <div class="swiper-container services__swiper-container">
+    <div class="swiper-container services__swiper-container services__row">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="card-platform services__card-platform">

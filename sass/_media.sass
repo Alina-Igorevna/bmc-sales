@@ -77,14 +77,17 @@
     margin-right: 20rem     
   .info__nav
     font-size: 1rem     
+  .info__nav__select
+    font-size: 1rem  
 
 @media screen and ( max-width: 991px)     
-  .services
-    display: none
   .application
     display: none    
-  .uniform__row, .categories__row, .popular__row, .discounts__row, .offer__row, .product-detail__row
+  .categories__row, .popular__row, .discounts__row, .offer__row, .product-detail__row
     flex-direction: column  
+  .uniform__row
+    flex-wrap: wrap
+    justify-content: space-around  
   .product-detail__row
     align-items: center
     justify-content: center
@@ -97,7 +100,7 @@
   .categories__col-23
     width: 50%
   .categories__wrap, .card
-    margin-bottom: 1.5rem
+    margin-bottom: 3rem
   .hero__title
     max-width: 100%
   .hero__swiper-container
@@ -311,6 +314,9 @@
     max-width: 320px
   .card__image
     max-width: 30rem
+  .services__row 
+    max-width: 320px
+
   .hero  
     &__swiper   
        &-button-prev, &-button-next  
@@ -378,16 +384,10 @@
           color: $white
           border: none
           background:  $orange    
+  .page-hierarchy
+    display: none        
 
 
-
-  
-
-
-        
-  
-  
-    
 
   
 @media screen and ( max-width: 750px)  
@@ -423,7 +423,9 @@
   .mobile-app__button
     padding: 1rem
   .contacts
-    align-items: flex-start  
+    align-items: flex-start 
+  .menu
+    margin-left: 1rem   
 
 @media screen and ( max-width: 650px) 
   .product-detail__tablinks
@@ -438,6 +440,14 @@
     margin-left: 0
     padding: 0 1rem   
     margin-bottom: 2rem
+  .uniform__section-title  
+    min-width: 300px
+    &::before
+      content: ''
+      max-width: 5rem
+    &::after  
+      content: ''
+      max-width: 5rem
 
 
   
@@ -449,6 +459,13 @@
     flex-wrap: wrap  
   .delivery-form-group
     margin-bottom: 1rem  
+  .copyright__row
+    flex-direction: column
+    justify-content: center  
+  .copyright
+    margin-bottom: 1rem  
+  .section-title__heading
+    width: 100rem  
 
 
 @media screen and ( max-width: 500px)  
@@ -484,6 +501,14 @@
     flex-direction: column  
   .product-detail__tabcontent
     height: 33rem  
+  .footer__logo-name__title
+    font-size: 1.5rem  
+  .logo-name__subtitle
+    font-size: 0.8rem  
+  .footer__wrap
+    justify-content: space-around
+  .footer__col
+    margin-bottom: 2rem    
 
 @media screen and ( max-width: 440px)  
   .view-product__button-icon
@@ -519,6 +544,8 @@
     margin-right: 0  
   #pages-number-3, #pages-number-4
     display: none  
+  .card
+    max-width: 280px  
 
         
    
